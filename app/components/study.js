@@ -10,7 +10,7 @@ import {Link} from 'react-router';
 class Hello extends Component {
 	render(){
 		return (
-			<Example title="React Hello World 小实例" codeQure={(
+			<Example title="React Hello World 实例" codeQure={(
 				<img src={require("./images/b1.png")} width="100%"/>
 			)}>
 			<HelloWrold></HelloWrold>
