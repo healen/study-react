@@ -16,14 +16,11 @@ export default class Example extends Component {
 		// var open = false;
 		return (
 			<div>
-				<h3 className="page-header">{this.props.title}</h3>
-
+				<h4 className="page-header">{this.props.title}</h4>
 				<div className="playground">
 					<div className="bs-example">
 						{this.props.children}
 					</div>
-
-
 					<div ref="code" className={this.state.isCodeOpen ? 'show':'hide'}  style={{clear:"both"}} >
 					{this.props.codeQure}
 					</div>

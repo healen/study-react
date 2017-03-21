@@ -29,7 +29,7 @@ module.exports = {
 			,
 			{
 				test:/\.(png|jpg|jpeg|gif)/,
-				loader:'url-loader?limit=25000'
+				loader:'url-loader?limit=250000'
 				
 			}
 		]

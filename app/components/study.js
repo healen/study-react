@@ -11,14 +11,9 @@ class Hello extends Component {
 	render(){
 		return (
 			<Example title="React Hello World 小实例" codeQure={(
-				<CodeBox>
-					暂时不能展示代码
-					
-				</CodeBox>
+				<img src={require("./images/b1.png")} width="100%"/>
 			)}>
-
 			<HelloWrold></HelloWrold>
-
 			</Example>
 		)
 	}
@@ -32,6 +27,8 @@ class HelloWrold extends Component {
 		
 	}
 }
+
+
 class CodeBox extends Component {
 	render(){
 		return(
