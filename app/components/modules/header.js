@@ -35,7 +35,7 @@ export default class Header extends Component{
 						<div className={this.state.open?"navbar-collapse bs-navbar-collapse":"navbar-collapse bs-navbar-collapse collapse"}>
 							<ul id="top" role="navigation" className="nav navbar-nav">
 								<li> <Link to="/StudyReact" activeClassName="active">笔记</Link></li>
-								<li><a href={this.state.GitHubUrl} target="_blank">GitHub</a></li>
+								<li><a href={this.state.GitHubUrl} target="_blank">GitHub Source Code</a></li>
 							</ul>
 						</div>
 					</div>

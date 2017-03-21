@@ -99,7 +99,8 @@ hr {
 }
 
 pre {
-    overflow: auto
+    overflow: auto;
+    /*white-space:normal;*/
 }
 
 code,kbd,pre,samp {
@@ -1757,15 +1758,15 @@ kbd kbd {
 pre {
     display: block;
     padding: 9.5px;
-    margin: 0 0 10px;
+    margin: 0px;
     font-size: 13px;
     line-height: 1.42857143;
-    word-break: break-all;
-    word-wrap: break-word;
+    /*word-break: break-all;*/
+    /*word-wrap: break-word;*/
     color: #333;
     background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 4px
+    border: 1px solid #e1e1e8;
+    /*border-radius: 4px*/
 }
 
 pre code {
@@ -7263,7 +7264,7 @@ body {
 }
 
 .bs-docs-header {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     font-size: 20px
 }
 
@@ -8037,9 +8038,9 @@ h1[id] {
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
-    word-break: normal;
-    word-wrap: nowrap;
-    white-space: nowrap;
+    /*word-break: normal;*/
+    /*word-wrap: nowrap;*/
+    /*white-space: nowrap;*/
     background-color: transparent;
     border: 0
 }
