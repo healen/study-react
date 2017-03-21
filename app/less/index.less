@@ -23,7 +23,7 @@ body,html,#bodyContent,.bodyPage{
 }
 
 .navBar{
-	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
 	height: 100%;
 	// background: #aaa;
 	ul{
@@ -39,14 +39,17 @@ body,html,#bodyContent,.bodyPage{
 			text-align: left;
 			color: #555;
 			padding-left: 10px;
+			padding-right: 10px;
 			cursor: pointer;
+			border-radius: 0px 20px 20px 0px;
 			border-left: 3px solid #f9f9f9;
 			&:hover{
 				text-decoration: none;
 				color: #00d8ff;
 			}
 			&.acitve{
-				border-left: 3px solid #00d8ff;
+				border-right: 3px solid #00d8ff;
+				text-align: right;
 				color: #00d8ff;
 				background: #333;
 
