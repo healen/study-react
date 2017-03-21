@@ -6,7 +6,10 @@ import {
 	IndexRoute,
 } from 'react-router';
 import {App,Index,StudyReact} from './components/app.js';
-import {Hello} from './components/study'
+import {
+	Hello,
+	JsxSyntx
+} from './components/study'
 var  Routers = (
 	<Router history={hashHistory}>
 		<Route path="/" component={App}>
@@ -14,6 +17,7 @@ var  Routers = (
 			<Route path='StudyReact' component={StudyReact}>
 				<IndexRoute component={Hello}/>
 				<Route path="hello" component={Hello}></Route>
+				<Route path="jsx" component={JsxSyntx}></Route>
 			</Route>
 		</Route>
 	</Router>

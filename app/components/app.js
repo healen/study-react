@@ -3,8 +3,9 @@ import React,{Component} from 'react';
 import Header from './modules/header';
 
 import {Link} from 'react-router'
-
+import '../less/bundle.css';
 import '../less/index.less';
+
 
 
 class App extends Component {
@@ -46,8 +47,8 @@ class StudyReact extends Component {
 				<div className="col-md-3 col-sm-3 col-xs-4 navBar bodyPage">
 					<ul>
 						<li>
-							<Link to="/StudyReact/hello" activeClassName="acitve">react的 Hello Word</Link>
-							
+							<Link to="/StudyReact/hello" activeClassName="acitve">Hello Word</Link>
+							<Link to="/StudyReact/jsx" activeClassName="acitve">jsx语法</Link>
 						</li>
 						
 					</ul>

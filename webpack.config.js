@@ -37,13 +37,13 @@ module.exports = {
 	resolve:{
 		extendsions:['','.coffee','.js','.less']
 	},
-	// plugins: [
- //    new webpack.optimize.UglifyJsPlugin({
- //      compress: {
- //        warnings: false
- //      }
- //    })
- //  ],
+	plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    })
+  ],
 
 	watch:true
 }
