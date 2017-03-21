@@ -27502,7 +27502,7 @@
 			value: function render() {
 				return _react2.default.createElement(
 					_example2.default,
-					{ title: 'React Hello World \u5C0F\u5B9E\u4F8B', codeQure: _react2.default.createElement('img', { src: __webpack_require__(242), width: '100%' }) },
+					{ title: 'React Hello World \u5B9E\u4F8B', codeQure: _react2.default.createElement('img', { src: __webpack_require__(242), width: '100%' }) },
 					_react2.default.createElement(HelloWrold, null)
 				);
 			}
