@@ -41,11 +41,31 @@ class Index extends Component {
 
 
 class StudyReact extends Component {
+
+	componentDidMount() {
+	  window.onscroll = function(){
+	  	var headerDOM = document.getElementById('header');
+	  	var navBarDOM = document.getElementById('navBar');
+	  	var scrollTOP = document.body.scrollTop;
+	  	var headerHeight = headerDOM.offsetHeight;
+	  	var offsetLeft = navBarDOM.offsetLeft;
+	  	var navWidth = navBarDOM.offsetWidth;
+	  	if(scrollTOP>headerHeight){
+	  		navBarDOM.style.position="fixed";
+	  		navBarDOM.style.top="0px";
+	  		navBarDOM.style.left=offsetLeft+"px";
+	  		navBarDOM.style.width=navWidth+"px"
+	  	}else{
+	  		navBarDOM.style={}
+	  	}
+	  	console.log(document.body.scrollTop +" "+headerHeight)
+	  }
+	}
 	render(){
 		return (
 			<div className="bodyPage">
 				<div className="col-md-9 col-sm-9 col-xs-9">{this.props.children}</div>
-				<div className="col-md-3 col-sm-3 col-xs-3 navBar bodyPage">
+				<div className="col-md-3 col-sm-3 col-xs-3 navBar bodyPage" id="navBar">
 					<ul>
 						<li>
 							<Link to="/StudyReact/hello" activeClassName="acitve">Hello Word</Link>
@@ -54,35 +74,35 @@ class StudyReact extends Component {
 							<Link to="/StudyReact/jsx" activeClassName="acitve">jsx语法</Link>
 						</li>
 						<li>
-							<Link to="/StudyReact/comp" activeClassName="acitve">react组件</Link>
+							<Link to="/StudyReact/comp" activeClassName="acitve">组件</Link>
 						</li>
 
 						<li>
-							<Link to="/StudyReact/prop" activeClassName="acitve">react PropTypes</Link>
+							<Link to="/StudyReact/prop" activeClassName="acitve">PropTypes</Link>
 						</li>
 
 						<li>
-							<Link to="/StudyReact/dom" activeClassName="acitve">react DOM</Link>
+							<Link to="/StudyReact/dom" activeClassName="acitve">DOM</Link>
 						</li>
 
 						<li>
-							<Link to="/StudyReact/state" activeClassName="acitve">react state</Link>
+							<Link to="/StudyReact/state" activeClassName="acitve">State</Link>
 						</li>
 
 						<li>
-							<Link to="/StudyReact/form" activeClassName="acitve">react 表单</Link>
+							<Link to="/StudyReact/form" activeClassName="acitve">表单</Link>
 						</li>
 
 						<li>
-							<Link to="/StudyReact/life" activeClassName="acitve">react 生命周期</Link>
+							<Link to="/StudyReact/life" activeClassName="acitve">生命周期</Link>
 						</li>
 
 						<li>
-							<Link to="/StudyReact/ajax" activeClassName="acitve">react Ajax</Link>
+							<Link to="/StudyReact/ajax" activeClassName="acitve">react数据请求</Link>
 						</li>
 
 						<li>
-							<Link to="/StudyReact/webpack" activeClassName="acitve">react Webpack</Link>
+							<Link to="/StudyReact/webpack" activeClassName="acitve">Webpack</Link>
 						</li>
 					</ul>
 				</div>
