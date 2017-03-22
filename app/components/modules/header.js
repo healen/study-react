@@ -20,7 +20,7 @@ export default class Header extends Component{
 	}
 	render(){
 		return (
-			<div>
+			<div id="header">
 				<header role="banner" className="bs-docs-nav navbar navbar-default navbar-static-top">
 					<div className="container">
 						<div className="navbar-header">
