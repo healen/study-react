@@ -40,7 +40,7 @@ export default class Header extends Component{
 						</div>
 					</div>
 				</header>
-				<div className="bs-docs-header" id="content" data-reactid="26">
+				<div className="bs-docs-header" id="content" data-reactid="26" style={{"overflow":"hide"}}>
 					<div className="container" data-reactid="27">
 						<h1 data-reactid="28">{this.state.title}</h1>
 						<p data-reactid="29">{this.state.desct}</p>

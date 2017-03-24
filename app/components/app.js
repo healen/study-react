@@ -3,9 +3,10 @@ import React,{Component} from 'react';
 import Header from './modules/header';
 
 import {Link} from 'react-router'
+
+import Menu from './services/menu'
 import '../less/bundle.css';
 import '../less/index.less';
-
 
 
 class App extends Component {
@@ -58,7 +59,6 @@ class StudyReact extends Component {
 	  	}else{
 	  		navBarDOM.style={}
 	  	}
-	  	console.log(document.body.scrollTop +" "+headerHeight)
 	  }
 	}
 	render(){
@@ -67,43 +67,16 @@ class StudyReact extends Component {
 				<div className="col-md-9 col-sm-9 col-xs-9">{this.props.children}</div>
 				<div className="col-md-3 col-sm-3 col-xs-3 navBar bodyPage" id="navBar">
 					<ul>
-						<li>
-							<Link to="/StudyReact/hello" activeClassName="acitve">Hello Word</Link>
-						</li>
-						<li>
-							<Link to="/StudyReact/jsx" activeClassName="acitve">jsx语法</Link>
-						</li>
-						<li>
-							<Link to="/StudyReact/comp" activeClassName="acitve">组件</Link>
-						</li>
-
-						<li>
-							<Link to="/StudyReact/prop" activeClassName="acitve">PropTypes</Link>
-						</li>
-
-						<li>
-							<Link to="/StudyReact/dom" activeClassName="acitve">DOM</Link>
-						</li>
-
-						<li>
-							<Link to="/StudyReact/state" activeClassName="acitve">State</Link>
-						</li>
-
-						<li>
-							<Link to="/StudyReact/form" activeClassName="acitve">表单</Link>
-						</li>
-
-						<li>
-							<Link to="/StudyReact/life" activeClassName="acitve">生命周期</Link>
-						</li>
-
-						<li>
-							<Link to="/StudyReact/ajax" activeClassName="acitve">react数据请求</Link>
-						</li>
-
-						<li>
-							<Link to="/StudyReact/webpack" activeClassName="acitve">Webpack</Link>
-						</li>
+						{
+							Menu.map(function(item,key){
+								return (
+									<li key={key}>
+										<Link to={item.to} activeClassName="acitve">{item.title}</Link>
+									</li>
+								)
+								
+							})
+						}
 					</ul>
 				</div>
 				

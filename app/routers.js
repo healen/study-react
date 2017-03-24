@@ -8,7 +8,9 @@ import {
 import {App,Index,StudyReact} from './components/app.js';
 import {
 	Hello,
-	JsxSyntx
+	JsxSyntx,
+	Comp,
+	PropsChildren
 } from './components/study'
 var  Routers = (
 	<Router history={hashHistory}>
@@ -18,6 +20,8 @@ var  Routers = (
 				<IndexRoute component={Hello}/>
 				<Route path="hello" component={Hello}></Route>
 				<Route path="jsx" component={JsxSyntx}></Route>
+				<Route path="comp" component={Comp}></Route>
+				<Route path="propschildren" component={PropsChildren}></Route>
 			</Route>
 		</Route>
 	</Router>
