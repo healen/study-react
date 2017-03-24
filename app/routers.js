@@ -5,7 +5,7 @@ import {
 	hashHistory,
 	IndexRoute,
 } from 'react-router';
-import {App,Index,StudyReact} from './components/app.js';
+import {App,Index,StudyReact,Effects} from './components/app.js';
 import {
 	Hello,
 	JsxSyntx,
@@ -23,6 +23,7 @@ var  Routers = (
 				<Route path="comp" component={Comp}></Route>
 				<Route path="propschildren" component={PropsChildren}></Route>
 			</Route>
+			<Route path="effects" component={Effects}></Route>
 		</Route>
 	</Router>
 )

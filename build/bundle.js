@@ -21575,7 +21575,8 @@
 				_react2.default.createElement(_reactRouter.Route, { path: 'jsx', component: _study.JsxSyntx }),
 				_react2.default.createElement(_reactRouter.Route, { path: 'comp', component: _study.Comp }),
 				_react2.default.createElement(_reactRouter.Route, { path: 'propschildren', component: _study.PropsChildren })
-			)
+			),
+			_react2.default.createElement(_reactRouter.Route, { path: 'effects', component: _app.Effects })
 		)
 	);
 	exports.default = Routers;
@@ -26835,7 +26836,7 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.StudyReact = exports.Index = exports.App = undefined;
+	exports.Effects = exports.StudyReact = exports.Index = exports.App = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -26991,9 +26992,123 @@
 		return StudyReact;
 	}(_react.Component);
 
+	var Effects = function (_Component4) {
+		_inherits(Effects, _Component4);
+
+		function Effects() {
+			_classCallCheck(this, Effects);
+
+			return _possibleConstructorReturn(this, (Effects.__proto__ || Object.getPrototypeOf(Effects)).apply(this, arguments));
+		}
+
+		_createClass(Effects, [{
+			key: 'render',
+
+			// componentDidMount() {
+			// 	(function(){
+			// 		function C(){
+			// 			e.globalCompositeOperation="source-over";
+			// 			e.fillStyle="rgba(8,8,12,0.65)";
+			// 			e.fillRect(0,0,f,p);
+			// 			e.globalCompositeOperation="lighter";
+			// 			x=q-u;
+			// 			y=r-v;
+			// 			u=q;
+			// 			v=r;
+			// 			for(var d=0.86*f,l=0.125*f,m=0.5*f,t=Math.random,n=Math.abs,o=z;o--;){
+			// 				var h=A[o],i=h.x,j=h.y,a=h.a,b=h.b,c=i-q,k=j-r,g=Math.sqrt(c*c+k*k)||0.001,c=c/g,k=k/g;
+			// 				if(w&&g<m)
+			// 				var s=14*(1-g/m),a=a+(c*s+0.5-t()),b=b+(k*s+0.5-t());
+			// 				g<d&&(s=0.0014*(1-g/d)*f,a-=c*s,b-=k*s);
+			// 				g<l&&(c=2.6E-4*(1-g/l)*f,a+=x*c,b+=y*c);
+			// 				a*=B;
+			// 				b*=B;
+			// 				c=n(a);
+			// 				k=n(b);
+			// 				g=0.5*(c+k);
+			// 				0.1>c&&(a*=3*t());
+			// 				0.1>k&&(b*=3*t());
+			// 				c=0.45*g;
+			// 				c=Math.max(Math.min(c,3.5),0.4);
+			// 				i+=a;
+			// 				j+=b;
+			// 				i>f?(i=f,a*=-1):0>i&&(i=0,a*=-1);
+			// 				j>p?(j=p,b*=-1):0>j&&(j=0,b*=-1);
+			// 				h.a=a;
+			// 				h.b=b;
+			// 				h.x=i;
+			// 				h.y=j;
+			// 				e.fillStyle=h.color;
+			// 				e.beginPath();
+			// 				e.arc(i,j,c,0,D,!0);
+			// 				e.closePath();
+			// 				e.fill()
+			// 			}
+			// 		}
+			// 		function E(d){
+			// 			d=d?d:window.event;
+			// 			q=d.clientX-m.offsetLeft-n.offsetLeft;
+			// 			r=d.clientY-m.offsetTop-n.offsetTop
+			// 		}
+			// 		function F(){
+			// 			w=!0;
+			// 			return!1
+			// 		}
+			// 		function G(){
+			// 			return w=!1
+			// 		}
+			// 		function H(){
+			// 			this.color="rgb("+Math.floor(255*Math.random())+","+Math.floor(255*Math.random())+","+Math.floor(255*Math.random())+")";
+			// 			this.b=this.a=this.x=this.y=0;
+			// 			this.size=1
+			// 		}
+			// 		var D=2*Math.PI,f=1E3,p=560,z=600,B=0.96,A=[],o,e,n,m,q,r,x,y,u,v,w;
+			// 		window.onload=function(){
+			// 			o=document.getElementById("mainCanvas");
+			// 			if(o.getContext){
+			// 				m=document.getElementById("outer");
+			// 				n=document.getElementById("canvasContainer");
+			// 				e=o.getContext("2d");
+			// 				for(var d=z;d--;){
+			// 					var l=new H;
+			// 					l.x=0.5*f;
+			// 					l.y=0.5*p;
+			// 					l.a=34*Math.cos(d)*Math.random();
+			// 					l.b=34*Math.sin(d)*Math.random();
+			// 					A[d]=l}q=u=0.5*f;r=v=0.5*p;
+			// 					document.onmousedown=F;
+			// 					document.onmouseup=G;
+			// 					document.onmousemove=E;
+			// 					setInterval(C,33);
+			// 					document.getElementById("output").innerHTML='用鼠标进行滑动或点击'
+			// 				}
+			// 			else document.getElementById("output").innerHTML="对不起，需要最新版本的Chrome, Firefox, Opera, Safari, or Internet Explorer 9."
+			// 		}
+			// 	})();    	
+
+
+			// }
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ id: 'outer' },
+					_react2.default.createElement(
+						'div',
+						{ id: 'canvasContainer' },
+						_react2.default.createElement('canvas', { id: 'mainCanvas', width: '1000', height: '560' }),
+						_react2.default.createElement('div', { id: 'output' })
+					)
+				);
+			}
+		}]);
+
+		return Effects;
+	}(_react.Component);
+
 	exports.App = App;
 	exports.Index = Index;
 	exports.StudyReact = StudyReact;
+	exports.Effects = Effects;
 
 /***/ },
 /* 235 */
@@ -27090,6 +27205,17 @@
 											_reactRouter.Link,
 											{ to: '/StudyReact', activeClassName: 'active' },
 											'\u7B14\u8BB0'
+										)
+									),
+									'// ',
+									_react2.default.createElement(
+										'li',
+										null,
+										' ',
+										_react2.default.createElement(
+											_reactRouter.Link,
+											{ to: '/effects', activeClassName: 'active' },
+											'\u70AB\u9177\u7279\u6548'
 										)
 									),
 									_react2.default.createElement(
