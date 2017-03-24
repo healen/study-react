@@ -11,7 +11,7 @@ export default class Header extends Component{
 	  this.state = {
 	  	GitHubUrl:'https://github.com/healen/study-react',
 	  	open:false,
-	  	title:"React入坑之旅",
+	  	title:"React之禅",
 	  	desct:"React以及相关组件开发，如下笔记，欢迎入坑"
 	  };
 	}

@@ -11,5 +11,28 @@
 <body>
 	<div id="bodyContent"></div>
 </body>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="drift.zxd.js"></script>
 	<script type="text/javascript" src="bundle.js"></script>
+
+	<script type="text/javascript">
+
+		$(function(){
+
+			$("body").drift('clear');
+	        $("body").drift({
+	            image :["img/r1.png",'img/r2.png','img/r3.png'],//红包图片
+	            maxSize:40,
+	            minSize:10,
+	            wind:0,
+	            sleep:300,
+	            sleepAnimate:10000,
+	        });
+
+
+		})
+		
+	</script>
+
+
 </html>
