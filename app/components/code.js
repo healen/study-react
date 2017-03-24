@@ -105,6 +105,68 @@ ReactDOM.render(
 
 
 
+,
+
+
+
+
+comp:`class HelloMessage extends Component {
+	render(){
+		return (
+			<h1>Hello {this.props.name}</h1>
+		)
+	}
+}
+/*渲染该组件*/
+ReactDOM.render(
+	<HelloMessage name="Healen" />,
+	document.getElementById('app')
+)`
+
+
+
+
+
+,
+
+
+
+children:`class NotesList extends Component {
+	render(){
+		return (
+			<ol>
+				{
+					this.props.children.map(function(child,key){
+						return <li key={key}>{child}</li>
+					})
+				}
+			</ol>
+		)
+	}
+}
+/*渲染该组件*/
+ReactDOM.render(
+	<NotesList>
+		<span>我是第一个子元素</span>
+		<span>我是第二个子元素</span>
+		<span>我是第三个子元素</span>
+		<span>...</span>
+		<span>我是第N个子元素</span>
+	</NotesList>,
+	document.getElementById('app')
+)`
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

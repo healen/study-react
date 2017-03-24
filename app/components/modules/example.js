@@ -36,9 +36,13 @@ export default class Example extends Component {
 						{this.props.children}
 					</div>
 					<div ref="code" className={this.state.isCodeOpen ? 'codebox h':'codebox h0'}  style={{clear:"both"}} >
-						<CodeMirror value={this.props.codeQure} options={{mode: 'javascript',lineNumbers:true,readOnly:'nocursor'}} />
+						<CodeMirror value={this.props.codeQure} options={{mode: 'javascript',lineWrapping:true,lineNumbers:true,readOnly:'nocursor'}} />
 					</div>
-					<span className={this.state.isCodeOpen ? 'code-toggle hui':'code-toggle'} onClick={this.handleOpen.bind(this)} ref="btn" role="button" href="javascript:void(0)">{this.state.showCode}</span>
+					<span 
+						className={this.state.isCodeOpen ? 'code-toggle hui':'code-toggle'} 
+						onClick={this.handleOpen.bind(this)} >
+						{this.state.showCode}
+					</span>
 				</div>
 			</div>
 		)
