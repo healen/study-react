@@ -1,4 +1,4 @@
-import React,{Component} from 'react'
+import React,{Component} from 'react';
 
 import CodeMirror from 'react-codemirror';
 
@@ -18,7 +18,7 @@ export default class Example extends Component {
 
 	constructor(props) {
 	  super(props);
-	
+
 	  this.state = {
 	  	showCode:"显示源码",
 	  	isCodeOpen:false
