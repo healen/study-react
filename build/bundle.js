@@ -21580,7 +21580,8 @@
 				_react2.default.createElement(_reactRouter.Route, { path: 'hello', component: _study.Hello }),
 				_react2.default.createElement(_reactRouter.Route, { path: 'jsx', component: _study.JsxSyntx }),
 				_react2.default.createElement(_reactRouter.Route, { path: 'comp', component: _study.Comp }),
-				_react2.default.createElement(_reactRouter.Route, { path: 'propschildren', component: _study.PropsChildren })
+				_react2.default.createElement(_reactRouter.Route, { path: 'propschildren', component: _study.PropsChildren }),
+				_react2.default.createElement(_reactRouter.Route, { path: 'propstype', component: _study.ProptypesEx })
 			),
 			_react2.default.createElement(_reactRouter.Route, { path: 'effects', component: _app.Effects })
 		)
@@ -27255,15 +27256,7 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	var Menu = [{ to: "/StudyReact/hello", title: "Hello Word" }, { to: "/StudyReact/jsx", title: "jsx语法" }, { to: "/StudyReact/comp", title: "组件" }, { to: "/StudyReact/propschildren", title: "Props Children" }
-	// {to:"/StudyReact/propstype",title:"PropTypes"},
-	// {to:"/StudyReact/dom",title:"React DOM"},
-	// {to:"/StudyReact/state",title:"State"},
-	// {to:"/StudyReact/form",title:"表单"},
-	// {to:"/StudyReact/life",title:"生命周期"},
-	// {to:"/StudyReact/ajax",title:"数据请求"},
-	// {to:"/StudyReact/webpack",title:"webpack"},
-	];
+	var Menu = [{ to: "/StudyReact/hello", title: "Hello Word" }, { to: "/StudyReact/jsx", title: "jsx语法" }, { to: "/StudyReact/comp", title: "组件" }, { to: "/StudyReact/propschildren", title: "Props Children" }, { to: "/StudyReact/propstype", title: "PropTypes" }, { to: "/StudyReact/dom", title: "DOM操作" }];
 	exports.default = Menu;
 
 /***/ },
@@ -27662,7 +27655,7 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.PropsChildren = exports.Comp = exports.JsxSyntx = exports.Hello = undefined;
+	exports.ProptypesEx = exports.PropsChildren = exports.Comp = exports.JsxSyntx = exports.Hello = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -27891,6 +27884,44 @@
 		return PropsChildren;
 	}(_react.Component);
 
+	var ProptypesEx = function (_Component5) {
+		_inherits(ProptypesEx, _Component5);
+
+		function ProptypesEx() {
+			_classCallCheck(this, ProptypesEx);
+
+			return _possibleConstructorReturn(this, (ProptypesEx.__proto__ || Object.getPrototypeOf(ProptypesEx)).apply(this, arguments));
+		}
+
+		_createClass(ProptypesEx, [{
+			key: 'render',
+			value: function render() {
+				var str = 10;
+				return _react2.default.createElement(
+					'div',
+					{ id: 'ProptypesEx' },
+					_react2.default.createElement(
+						'h2',
+						{ className: 'page-header' },
+						'propsType'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'\u7EC4\u4EF6\u7684\u5C5E\u6027\u53EF\u4EE5\u63A5\u53D7\u4EFB\u610F\u503C\uFF0C\u5B57\u7B26\u4E32\u3001\u5BF9\u8C61\u3001\u51FD\u6570\u7B49\u7B49\u90FD\u53EF\u4EE5\u3002\u6709\u65F6\uFF0C\u6211\u4EEC\u9700\u8981\u4E00\u79CD\u673A\u5236\uFF0C\u9A8C\u8BC1\u522B\u4EBA\u4F7F\u7528\u7EC4\u4EF6\u65F6\uFF0C\u63D0\u4F9B\u7684\u53C2\u6570\u662F\u5426\u7B26\u5408\u8981\u6C42\u3002'
+					),
+					_react2.default.createElement(
+						_example2.default,
+						{ title: 'propsType \u5B9E\u4F8B', codeQure: _code2.default.ProptypesShow },
+						_react2.default.createElement(ProptypesShow /*str={str}*/, null)
+					)
+				);
+			}
+		}]);
+
+		return ProptypesEx;
+	}(_react.Component);
+
 	/********华********丽********的********分********割********线********/
 	/********华********丽********的********分********割********线********/
 	/********华********丽********的********分********割********线********/
@@ -27908,8 +27939,8 @@
 	/*测试组件类*/
 
 
-	var HelloWrold = function (_Component5) {
-		_inherits(HelloWrold, _Component5);
+	var HelloWrold = function (_Component6) {
+		_inherits(HelloWrold, _Component6);
 
 		function HelloWrold() {
 			_classCallCheck(this, HelloWrold);
@@ -27933,18 +27964,18 @@
 	/*双向数据绑定*/
 
 
-	var TowWayData = function (_Component6) {
-		_inherits(TowWayData, _Component6);
+	var TowWayData = function (_Component7) {
+		_inherits(TowWayData, _Component7);
 
 		function TowWayData(props) {
 			_classCallCheck(this, TowWayData);
 
-			var _this6 = _possibleConstructorReturn(this, (TowWayData.__proto__ || Object.getPrototypeOf(TowWayData)).call(this, props));
+			var _this7 = _possibleConstructorReturn(this, (TowWayData.__proto__ || Object.getPrototypeOf(TowWayData)).call(this, props));
 
-			_this6.state = {
+			_this7.state = {
 				name: ""
 			};
-			return _this6;
+			return _this7;
 		}
 
 		_createClass(TowWayData, [{
@@ -27974,8 +28005,8 @@
 	/*JSX 操作*/
 
 
-	var Arrjsx = function (_Component7) {
-		_inherits(Arrjsx, _Component7);
+	var Arrjsx = function (_Component8) {
+		_inherits(Arrjsx, _Component8);
 
 		function Arrjsx() {
 			_classCallCheck(this, Arrjsx);
@@ -28004,8 +28035,8 @@
 		return Arrjsx;
 	}(_react.Component);
 
-	var Arrjsx2 = function (_Component8) {
-		_inherits(Arrjsx2, _Component8);
+	var Arrjsx2 = function (_Component9) {
+		_inherits(Arrjsx2, _Component9);
 
 		function Arrjsx2() {
 			_classCallCheck(this, Arrjsx2);
@@ -28040,8 +28071,8 @@
 	/*React 组件案例初始化*/
 
 
-	var HelloMessage = function (_Component9) {
-		_inherits(HelloMessage, _Component9);
+	var HelloMessage = function (_Component10) {
+		_inherits(HelloMessage, _Component10);
 
 		function HelloMessage() {
 			_classCallCheck(this, HelloMessage);
@@ -28067,8 +28098,8 @@
 	/*PropsChildren*/
 
 
-	var NotesList = function (_Component10) {
-		_inherits(NotesList, _Component10);
+	var NotesList = function (_Component11) {
+		_inherits(NotesList, _Component11);
 
 		function NotesList() {
 			_classCallCheck(this, NotesList);
@@ -28096,10 +28127,46 @@
 		return NotesList;
 	}(_react.Component);
 
+	var ProptypesShow = function (_Component12) {
+		_inherits(ProptypesShow, _Component12);
+
+		function ProptypesShow() {
+			_classCallCheck(this, ProptypesShow);
+
+			return _possibleConstructorReturn(this, (ProptypesShow.__proto__ || Object.getPrototypeOf(ProptypesShow)).apply(this, arguments));
+		}
+
+		_createClass(ProptypesShow, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ id: 'ProptypesShow' },
+					_react2.default.createElement(
+						'span',
+						null,
+						this.props.str
+					)
+				);
+			}
+		}]);
+
+		return ProptypesShow;
+	}(_react.Component);
+
+	ProptypesShow.propTypes = {
+		str: _react2.default.PropTypes.string
+	};
+
+	ProptypesShow.defaultProps = {
+		str: "djfadsjkf"
+	};
+
 	exports.Hello = Hello;
 	exports.JsxSyntx = JsxSyntx;
 	exports.Comp = Comp;
 	exports.PropsChildren = PropsChildren;
+	exports.ProptypesEx = ProptypesEx;
 
 /***/ },
 /* 244 */
@@ -42908,7 +42975,9 @@
 
 		comp: "class HelloMessage extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<h1>Hello {this.props.name}</h1>\n\t\t)\n\t}\n}\n/*\u6E32\u67D3\u8BE5\u7EC4\u4EF6*/\nReactDOM.render(\n\t<HelloMessage name=\"Healen\" />,\n\tdocument.getElementById('app')\n)",
 
-		children: "class NotesList extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<ol>\n\t\t\t\t{\n\t\t\t\t\tthis.props.children.map(function(child,key){\n\t\t\t\t\t\treturn <li key={key}>{child}</li>\n\t\t\t\t\t})\n\t\t\t\t}\n\t\t\t</ol>\n\t\t)\n\t}\n}\n/*\u6E32\u67D3\u8BE5\u7EC4\u4EF6*/\nReactDOM.render(\n\t<NotesList>\n\t\t<span>\u6211\u662F\u7B2C\u4E00\u4E2A\u5B50\u5143\u7D20</span>\n\t\t<span>\u6211\u662F\u7B2C\u4E8C\u4E2A\u5B50\u5143\u7D20</span>\n\t\t<span>\u6211\u662F\u7B2C\u4E09\u4E2A\u5B50\u5143\u7D20</span>\n\t\t<span>...</span>\n\t\t<span>\u6211\u662F\u7B2CN\u4E2A\u5B50\u5143\u7D20</span>\n\t</NotesList>,\n\tdocument.getElementById('app')\n)"
+		children: "class NotesList extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<ol>\n\t\t\t\t{\n\t\t\t\t\tthis.props.children.map(function(child,key){\n\t\t\t\t\t\treturn <li key={key}>{child}</li>\n\t\t\t\t\t})\n\t\t\t\t}\n\t\t\t</ol>\n\t\t)\n\t}\n}\n/*\u6E32\u67D3\u8BE5\u7EC4\u4EF6*/\nReactDOM.render(\n\t<NotesList>\n\t\t<span>\u6211\u662F\u7B2C\u4E00\u4E2A\u5B50\u5143\u7D20</span>\n\t\t<span>\u6211\u662F\u7B2C\u4E8C\u4E2A\u5B50\u5143\u7D20</span>\n\t\t<span>\u6211\u662F\u7B2C\u4E09\u4E2A\u5B50\u5143\u7D20</span>\n\t\t<span>...</span>\n\t\t<span>\u6211\u662F\u7B2CN\u4E2A\u5B50\u5143\u7D20</span>\n\t</NotesList>,\n\tdocument.getElementById('app')\n)",
+
+		ProptypesShow: "class ProptypesShow extends Component {\n\n\trender(){\n\t\treturn (\n\t\t\t<div id=\"ProptypesShow\">\n\t\t\t\t<span>{this.props.str}</span>\n\t\t\t</div>\n\t\t)\n\t}\n\n}\n\nProptypesShow.propTypes = {\n\tstr:React.PropTypes.string\n}\n\nProptypesShow.defaultProps = {\n  str: \"djfadsjkf\"\n}/*\u6E32\u67D3\u8BE5\u7EC4\u4EF6*/\nReactDOM.render(\n\t<ProptypesShow></ProptypesShow>,\n\tdocument.getElementById('app')\n)"
 
 	};
 	exports.default = code;

@@ -10,7 +10,8 @@ import {
 	Hello,
 	JsxSyntx,
 	Comp,
-	PropsChildren
+	PropsChildren,
+	ProptypesEx
 } from './components/study'
 var  Routers = (
 	<Router history={hashHistory}>
@@ -22,6 +23,8 @@ var  Routers = (
 				<Route path="jsx" component={JsxSyntx}></Route>
 				<Route path="comp" component={Comp}></Route>
 				<Route path="propschildren" component={PropsChildren}></Route>
+				<Route path="propstype" component={ProptypesEx}></Route>
+				
 			</Route>
 			<Route path="effects" component={Effects}></Route>
 		</Route>

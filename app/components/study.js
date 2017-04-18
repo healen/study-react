@@ -88,6 +88,25 @@ class PropsChildren extends Component {
 }
 
 
+class ProptypesEx extends Component {
+	render(){
+		var str = 10
+		return (
+
+
+
+			<div id="ProptypesEx">
+				<h2  className="page-header">propsType</h2>
+				<p>组件的属性可以接受任意值，字符串、对象、函数等等都可以。有时，我们需要一种机制，验证别人使用组件时，提供的参数是否符合要求。</p>
+				<Example title="propsType 实例" codeQure={code.ProptypesShow}>
+					<ProptypesShow /*str={str}*//>
+				</Example>
+			</div>
+		)
+	}
+}
+
+
 
 /********华********丽********的********分********割********线********/
 /********华********丽********的********分********割********线********/
@@ -188,8 +207,32 @@ class NotesList extends Component {
 }
 
 
+class ProptypesShow extends Component {
+
+	render(){
+		return (
+			<div id="ProptypesShow">
+				<span>{this.props.str}</span>
+			</div>
+		)
+	}
+
+}
+
+ProptypesShow.propTypes = {
+	str:React.PropTypes.string
+}
+
+ProptypesShow.defaultProps = {
+  str: "djfadsjkf"
+}
 
 
 
 
-export {Hello,JsxSyntx,Comp,PropsChildren};
+
+
+
+
+
+export {Hello,JsxSyntx,Comp,PropsChildren,ProptypesEx};

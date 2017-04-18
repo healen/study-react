@@ -160,6 +160,37 @@ ReactDOM.render(
 
 
 
+,
+
+
+ProptypesShow:`class ProptypesShow extends Component {
+
+	render(){
+		return (
+			<div id="ProptypesShow">
+				<span>{this.props.str}</span>
+			</div>
+		)
+	}
+
+}
+
+ProptypesShow.propTypes = {
+	str:React.PropTypes.string
+}
+
+ProptypesShow.defaultProps = {
+  str: "djfadsjkf"
+}/*渲染该组件*/
+ReactDOM.render(
+	<ProptypesShow></ProptypesShow>,
+	document.getElementById('app')
+)`
+
+
+
+
+
 
 
 
