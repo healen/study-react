@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0,minimum-scale=1.0, minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no, email=no">
+</head>
+<body>
+	<div id="bodyContent"></div>
+</body>
+	<script type="text/javascript" src="jquery.min.js"></script>
+
+	<br />
+	
+	<div class="imgsbox" style="text-align:center">
+		<div class="log">
+			抽奖次数<span id="degree"></span>
+		</div>
+
+		<br />
+
+		<div class="probox">			
+		</div>
+
+		<input type="button" value="开始抽奖" id="start">
+	</div>
+
+
+
+	<script type="text/javascript">
+
+	(function(){
+
+		var imgList = ["img/1.png","img/2.png","img/3.png","img/5.png"];//奖品列表
+		/**
+		 * JS获取n至m随机整数
+		 */
+		var rd=function(n,m){
+		    var c = m-n+1;  
+		    return Math.floor(Math.random() * c + n);
+		}
+		//rd(1,100) 返回 1到100之间的随机数
+		var swNumber = 3;//限制次数;
+		var isBegin = true; //是不是开始;
+		var timer = null; //初始化定时器
+
+
+		$("#start").on("click",function(){
+
+			if(isBegin==true){
+				isBegin=false;
+
+				clearInterval(timer);
+				$(this).val("停止抽奖")
+
+				timer=setInterval(function(){
+					var k = rd(0,imgList.length)//通过随机数获取数组k
+
+					$(".probox").html(imgList[k])
+
+				},10)
+
+
+			}else{
+
+				isBegin=true;
+
+				clearInterval(timer);
+
+			}
+			
+
+
+
+		})
+
+
+
+
+	})()
+
+
+
+
+
+	</script>
+</html>

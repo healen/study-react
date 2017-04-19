@@ -12,7 +12,7 @@ export default class Header extends Component{
 	  	GitHubUrl:'https://github.com/healen/study-react',
 	  	open:false,
 	  	title:"React之禅",
-	  	desct:"React以及相关组件开发，如下笔记，欢迎入坑"
+	  	desct:"React以及相关组件开发，如下笔记"
 	  };
 	}
 	componentDidMount() {
@@ -35,7 +35,9 @@ export default class Header extends Component{
 						<div className={this.state.open?"navbar-collapse bs-navbar-collapse":"navbar-collapse bs-navbar-collapse collapse"}>
 							<ul id="top" role="navigation" className="nav navbar-nav">
 								<li> <Link to="/StudyReact" activeClassName="active">笔记</Link></li>
+								{
 								// <li> <Link to="/effects" activeClassName="active">炫酷特效</Link></li>
+								}
 								<li><a href={this.state.GitHubUrl} target="_blank">GitHub Source Code</a></li>
 							</ul>
 						</div>
