@@ -21581,8 +21581,14 @@
 				_react2.default.createElement(_reactRouter.Route, { path: 'jsx', component: _study.JsxSyntx }),
 				_react2.default.createElement(_reactRouter.Route, { path: 'comp', component: _study.Comp }),
 				_react2.default.createElement(_reactRouter.Route, { path: 'propschildren', component: _study.PropsChildren }),
-				_react2.default.createElement(_reactRouter.Route, { path: 'propstype', component: _study.ProptypesEx })
+				_react2.default.createElement(_reactRouter.Route, { path: 'propstype', component: _study.ProptypesEx }),
+				_react2.default.createElement(_reactRouter.Route, { path: 'domc', component: _study.Domc }),
+				_react2.default.createElement(_reactRouter.Route, { path: 'statec', component: _study.Statec }),
+				_react2.default.createElement(_reactRouter.Route, { path: 'formc', component: _study.Formc }),
+				_react2.default.createElement(_reactRouter.Route, { path: 'life', component: _study.Lifec }),
+				_react2.default.createElement(_reactRouter.Route, { path: 'ajax', component: _study.Ajaxc })
 			),
+			'// ',
 			_react2.default.createElement(_reactRouter.Route, { path: 'effects', component: _app.Effects })
 		)
 	);
@@ -26987,91 +26993,6 @@
 
 		_createClass(Effects, [{
 			key: 'render',
-
-			// componentDidMount() {
-			// 	(function(){
-			// 		function C(){
-			// 			e.globalCompositeOperation="source-over";
-			// 			e.fillStyle="rgba(8,8,12,0.65)";
-			// 			e.fillRect(0,0,f,p);
-			// 			e.globalCompositeOperation="lighter";
-			// 			x=q-u;
-			// 			y=r-v;
-			// 			u=q;
-			// 			v=r;
-			// 			for(var d=0.86*f,l=0.125*f,m=0.5*f,t=Math.random,n=Math.abs,o=z;o--;){
-			// 				var h=A[o],i=h.x,j=h.y,a=h.a,b=h.b,c=i-q,k=j-r,g=Math.sqrt(c*c+k*k)||0.001,c=c/g,k=k/g;
-			// 				if(w&&g<m)
-			// 				var s=14*(1-g/m),a=a+(c*s+0.5-t()),b=b+(k*s+0.5-t());
-			// 				g<d&&(s=0.0014*(1-g/d)*f,a-=c*s,b-=k*s);
-			// 				g<l&&(c=2.6E-4*(1-g/l)*f,a+=x*c,b+=y*c);
-			// 				a*=B;
-			// 				b*=B;
-			// 				c=n(a);
-			// 				k=n(b);
-			// 				g=0.5*(c+k);
-			// 				0.1>c&&(a*=3*t());
-			// 				0.1>k&&(b*=3*t());
-			// 				c=0.45*g;
-			// 				c=Math.max(Math.min(c,3.5),0.4);
-			// 				i+=a;
-			// 				j+=b;
-			// 				i>f?(i=f,a*=-1):0>i&&(i=0,a*=-1);
-			// 				j>p?(j=p,b*=-1):0>j&&(j=0,b*=-1);
-			// 				h.a=a;
-			// 				h.b=b;
-			// 				h.x=i;
-			// 				h.y=j;
-			// 				e.fillStyle=h.color;
-			// 				e.beginPath();
-			// 				e.arc(i,j,c,0,D,!0);
-			// 				e.closePath();
-			// 				e.fill()
-			// 			}
-			// 		}
-			// 		function E(d){
-			// 			d=d?d:window.event;
-			// 			q=d.clientX-m.offsetLeft-n.offsetLeft;
-			// 			r=d.clientY-m.offsetTop-n.offsetTop
-			// 		}
-			// 		function F(){
-			// 			w=!0;
-			// 			return!1
-			// 		}
-			// 		function G(){
-			// 			return w=!1
-			// 		}
-			// 		function H(){
-			// 			this.color="rgb("+Math.floor(255*Math.random())+","+Math.floor(255*Math.random())+","+Math.floor(255*Math.random())+")";
-			// 			this.b=this.a=this.x=this.y=0;
-			// 			this.size=1
-			// 		}
-			// 		var D=2*Math.PI,f=1E3,p=560,z=600,B=0.96,A=[],o,e,n,m,q,r,x,y,u,v,w;
-			// 		window.onload=function(){
-			// 			o=document.getElementById("mainCanvas");
-			// 			if(o.getContext){
-			// 				m=document.getElementById("outer");
-			// 				n=document.getElementById("canvasContainer");
-			// 				e=o.getContext("2d");
-			// 				for(var d=z;d--;){
-			// 					var l=new H;
-			// 					l.x=0.5*f;
-			// 					l.y=0.5*p;
-			// 					l.a=34*Math.cos(d)*Math.random();
-			// 					l.b=34*Math.sin(d)*Math.random();
-			// 					A[d]=l}q=u=0.5*f;r=v=0.5*p;
-			// 					document.onmousedown=F;
-			// 					document.onmouseup=G;
-			// 					document.onmousemove=E;
-			// 					setInterval(C,33);
-			// 					document.getElementById("output").innerHTML='用鼠标进行滑动或点击'
-			// 				}
-			// 			else document.getElementById("output").innerHTML="对不起，需要最新版本的Chrome, Firefox, Opera, Safari, or Internet Explorer 9."
-			// 		}
-			// 	})();    	
-
-
-			// }
 			value: function render() {
 				return _react2.default.createElement(
 					'div',
@@ -27132,7 +27053,7 @@
 				GitHubUrl: 'https://github.com/healen/study-react',
 				open: false,
 				title: "React之禅",
-				desct: "React以及相关组件开发，如下笔记，欢迎入坑"
+				desct: "React以及相关组件开发，如下笔记"
 			};
 			return _this;
 		}
@@ -27191,17 +27112,6 @@
 											'\u7B14\u8BB0'
 										)
 									),
-									'// ',
-									_react2.default.createElement(
-										'li',
-										null,
-										' ',
-										_react2.default.createElement(
-											_reactRouter.Link,
-											{ to: '/effects', activeClassName: 'active' },
-											'\u70AB\u9177\u7279\u6548'
-										)
-									),
 									_react2.default.createElement(
 										'li',
 										null,
@@ -27256,7 +27166,7 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	var Menu = [{ to: "/StudyReact/hello", title: "Hello Word" }, { to: "/StudyReact/jsx", title: "jsx语法" }, { to: "/StudyReact/comp", title: "组件" }, { to: "/StudyReact/propschildren", title: "Props Children" }, { to: "/StudyReact/propstype", title: "PropTypes" }, { to: "/StudyReact/dom", title: "DOM操作" }];
+	var Menu = [{ to: "/StudyReact/hello", title: "Hello Word" }, { to: "/StudyReact/jsx", title: "jsx语法" }, { to: "/StudyReact/comp", title: "组件" }, { to: "/StudyReact/propschildren", title: "Props Children" }, { to: "/StudyReact/propstype", title: "PropTypes" }, { to: "/StudyReact/domc", title: "DOM操作" }, { to: "/StudyReact/statec", title: "State" }, { to: "/StudyReact/formc", title: "表单" }, { to: "/StudyReact/life", title: "生命周期" }, { to: "/StudyReact/ajax", title: "数据请求" }];
 	exports.default = Menu;
 
 /***/ },
@@ -27641,7 +27551,7 @@
 
 
 	// module
-	exports.push([module.id, "body,\nhtml,\n#bodyContent,\n.bodyPage {\n  height: 100%;\n}\nbody {\n  overflow-x: hidden;\n}\n.indexWarrp {\n  text-align: center;\n}\n.indexWarrp p {\n  padding: 10px;\n}\n.nav a.active {\n  background: #333;\n  border-bottom: 3px solid #cc7a6f!important;\n}\n.navBar {\n  border-left: 1px solid #ccc;\n  height: 100%;\n}\n.navBar ul {\n  padding-left: 0px;\n  margin-top: 10px;\n}\n.navBar li {\n  list-style: none;\n}\n.navBar li a {\n  line-height: 40px;\n  border-bottom: 1px solid #ccc;\n  display: block;\n  text-align: left;\n  color: #555;\n  padding-left: 10px;\n  padding-right: 10px;\n  cursor: pointer;\n  border-radius: 0px 20px 20px 0px;\n  border-left: 3px solid #f9f9f9;\n  -webkit-transition: all 300ms;\n  -o-transition: all 300ms;\n  transition: all 300ms;\n  width: 90%;\n}\n.navBar li a:hover {\n  text-decoration: none;\n  color: #00d8ff;\n  width: 100%;\n}\n.navBar li a.acitve {\n  border-right: 3px solid #00d8ff;\n  text-align: right;\n  color: #00d8ff;\n  background: #333;\n  width: 100%;\n}\n.navBar li a:focus {\n  text-decoration: none;\n}\n.codeTextarea {\n  width: 100%;\n  height: 210px;\n  display: block;\n  border-color: #ddd;\n  margin-top: -1px;\n  display: none;\n}\n.codeTextarea:focus {\n  border-color: #ddd;\n  outline-offsert: 0px;\n  outline-width: 0px;\n}\n.codebox {\n  border: 1px solid #ddd;\n  margin-top: -1px;\n  overflow: hidden;\n  display: block;\n  -webkit-transition: all 500ms;\n  -o-transition: all 500ms;\n  transition: all 500ms;\n}\n.h {\n  height: 300px;\n  opacity: 1;\n}\n.h0 {\n  height: 0px;\n  border-width: 0px;\n  opacity: .3;\n}\n", ""]);
+	exports.push([module.id, "body,\nhtml,\n#bodyContent,\n.bodyPage {\n  height: 100%;\n}\nbody {\n  overflow-x: hidden;\n}\n.indexWarrp {\n  text-align: center;\n}\n.indexWarrp p {\n  padding: 10px;\n}\n.nav a.active {\n  background: #333;\n  border-bottom: 3px solid #cc7a6f!important;\n}\n.navBar {\n  border-left: 1px solid #ccc;\n  height: 100%;\n}\n.navBar ul {\n  padding-left: 0px;\n  margin-top: 10px;\n}\n.navBar li {\n  list-style: none;\n}\n.navBar li a {\n  line-height: 40px;\n  border-bottom: 1px solid #ccc;\n  display: block;\n  text-align: left;\n  color: #555;\n  padding-left: 10px;\n  padding-right: 10px;\n  cursor: pointer;\n  border-radius: 0px 20px 20px 0px;\n  border-left: 3px solid #f9f9f9;\n  -webkit-transition: all 300ms;\n  -o-transition: all 300ms;\n  transition: all 300ms;\n  width: 90%;\n}\n.navBar li a:hover {\n  text-decoration: none;\n  color: #00d8ff;\n  width: 100%;\n}\n.navBar li a.acitve {\n  border-right: 3px solid #00d8ff;\n  text-align: right;\n  color: #00d8ff;\n  background: #333;\n  width: 100%;\n}\n.navBar li a:focus {\n  text-decoration: none;\n}\n.codeTextarea {\n  width: 100%;\n  height: 210px;\n  display: block;\n  border-color: #ddd;\n  margin-top: -1px;\n  display: none;\n}\n.codeTextarea:focus {\n  border-color: #ddd;\n  outline-offsert: 0px;\n  outline-width: 0px;\n}\n.codebox {\n  border: 1px solid #ddd;\n  margin-top: -1px;\n  overflow: hidden;\n  display: block;\n  -webkit-transition: all 500ms;\n  -o-transition: all 500ms;\n  transition: all 500ms;\n}\n.h {\n  height: 300px;\n  opacity: 1;\n}\n.h0 {\n  height: 0px;\n  border-width: 0px;\n  opacity: .3;\n}\n.life {\n  background: #000000;\n  height: 40px;\n  line-height: 40px;\n  color: #fff;\n  font-size: 20px;\n  text-align: center;\n  overflow: hidden;\n}\n", ""]);
 
 	// exports
 
@@ -27655,7 +27565,7 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
-	exports.ProptypesEx = exports.PropsChildren = exports.Comp = exports.JsxSyntx = exports.Hello = undefined;
+	exports.Ajaxc = exports.Lifec = exports.Formc = exports.Statec = exports.Domc = exports.ProptypesEx = exports.PropsChildren = exports.Comp = exports.JsxSyntx = exports.Hello = undefined;
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -27663,17 +27573,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _header = __webpack_require__(235);
-
-	var _header2 = _interopRequireDefault(_header);
-
 	var _example = __webpack_require__(244);
 
 	var _example2 = _interopRequireDefault(_example);
-
-	var _tips = __webpack_require__(257);
-
-	var _tips2 = _interopRequireDefault(_tips);
 
 	var _reactRouter = __webpack_require__(179);
 
@@ -27689,6 +27591,9 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	__webpack_require__(259).polyfill();
+	__webpack_require__(261);
+
 	var Hello = function (_Component) {
 		_inherits(Hello, _Component);
 
@@ -27701,7 +27606,6 @@
 		_createClass(Hello, [{
 			key: 'render',
 			value: function render() {
-				// console.log(JsxSyntx)
 				return _react2.default.createElement(
 					'div',
 					null,
@@ -27912,7 +27816,7 @@
 					),
 					_react2.default.createElement(
 						_example2.default,
-						{ title: 'propsType \u5B9E\u4F8B', codeQure: _code2.default.ProptypesShow },
+						{ title: 'propsType \u5B9E\u4F8B', codeQure: _code2.default.DomcExample },
 						_react2.default.createElement(ProptypesShow /*str={str}*/, null)
 					)
 				);
@@ -27920,6 +27824,256 @@
 		}]);
 
 		return ProptypesEx;
+	}(_react.Component);
+
+	var Domc = function (_Component6) {
+		_inherits(Domc, _Component6);
+
+		function Domc() {
+			_classCallCheck(this, Domc);
+
+			return _possibleConstructorReturn(this, (Domc.__proto__ || Object.getPrototypeOf(Domc)).apply(this, arguments));
+		}
+
+		_createClass(Domc, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ id: 'Domc' },
+					_react2.default.createElement(
+						'h2',
+						{ className: 'page-header' },
+						'\u83B7\u53D6\u771F\u5B9EDOM'
+					),
+					_react2.default.createElement('p', null),
+					_react2.default.createElement(
+						_example2.default,
+						{ title: '\u83B7\u53D6\u771F\u5B9EDOM \u5B9E\u4F8B', codeQure: _code2.default.DomcExample },
+						_react2.default.createElement(DomcExample, null)
+					)
+				);
+			}
+		}]);
+
+		return Domc;
+	}(_react.Component);
+
+	var Statec = function (_Component7) {
+		_inherits(Statec, _Component7);
+
+		function Statec() {
+			_classCallCheck(this, Statec);
+
+			return _possibleConstructorReturn(this, (Statec.__proto__ || Object.getPrototypeOf(Statec)).apply(this, arguments));
+		}
+
+		_createClass(Statec, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ id: 'Statec' },
+					_react2.default.createElement(
+						'h2',
+						{ className: 'page-header' },
+						'State'
+					),
+					_react2.default.createElement('p', null),
+					_react2.default.createElement(
+						_example2.default,
+						{ title: 'Statec \u5B9E\u4F8B', codeQure: _code2.default.StateExample },
+						_react2.default.createElement(StateExample, null)
+					)
+				);
+			}
+		}]);
+
+		return Statec;
+	}(_react.Component);
+
+	var Formc = function (_Component8) {
+		_inherits(Formc, _Component8);
+
+		function Formc() {
+			_classCallCheck(this, Formc);
+
+			return _possibleConstructorReturn(this, (Formc.__proto__ || Object.getPrototypeOf(Formc)).apply(this, arguments));
+		}
+
+		_createClass(Formc, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ id: 'Formc' },
+					_react2.default.createElement(
+						'h2',
+						{ className: 'page-header' },
+						'Form'
+					),
+					_react2.default.createElement('p', null),
+					_react2.default.createElement(
+						_example2.default,
+						{ title: 'Form \u5B9E\u4F8B', codeQure: _code2.default.FormExample },
+						_react2.default.createElement(FormExample, null)
+					)
+				);
+			}
+		}]);
+
+		return Formc;
+	}(_react.Component);
+
+	var Lifec = function (_Component9) {
+		_inherits(Lifec, _Component9);
+
+		function Lifec() {
+			_classCallCheck(this, Lifec);
+
+			return _possibleConstructorReturn(this, (Lifec.__proto__ || Object.getPrototypeOf(Lifec)).apply(this, arguments));
+		}
+
+		_createClass(Lifec, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ id: 'Lifec' },
+					_react2.default.createElement(
+						'h2',
+						{ className: 'page-header' },
+						'\u7EC4\u4EF6\u7684\u751F\u547D\u5468\u671F'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'react\u7EC4\u4EF6\u751F\u547D\u5468\u671F\u5206\u4E09\u4E2A\u72B6\u6001'
+					),
+					_react2.default.createElement(
+						'ul',
+						null,
+						_react2.default.createElement(
+							'li',
+							null,
+							'Mounting:\u5DF2\u63D2\u5165\u771F\u5B9EDOM'
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							'Updating:\u6B63\u5728\u88AB\u91CD\u65B0\u6E32\u67D3'
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							'Unmounting:\u5DF2\u79FB\u9664\u771F\u5B9EDOM'
+						)
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'React \u4E3A\u6BCF\u4E2A\u72B6\u6001\u90FD\u63D0\u4F9B\u4E86\u4E24\u79CD\u5904\u7406\u51FD\u6570\uFF0Cwill \u51FD\u6570\u5728\u8FDB\u5165\u72B6\u6001\u4E4B\u524D\u8C03\u7528\uFF0Cdid \u51FD\u6570\u5728\u8FDB\u5165\u72B6\u6001\u4E4B\u540E\u8C03\u7528\uFF0C\u4E09\u79CD\u72B6\u6001\u5171\u8BA1\u4E94\u79CD\u5904\u7406\u51FD\u6570\u3002'
+					),
+					_react2.default.createElement(
+						'ul',
+						null,
+						_react2.default.createElement(
+							'li',
+							null,
+							'componentWillMount()'
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							'componentDidMount()'
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							'componentWillUpdate(object nextProps,object nextState)'
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							'componentDidUpdate(object nextProps,object nextState)'
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							'componentWillUnmount()'
+						)
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'\u6B64\u5916\uFF0CReact \u8FD8\u63D0\u4F9B\u4E24\u79CD\u7279\u6B8A\u72B6\u6001\u7684\u5904\u7406\u51FD\u6570\u3002'
+					),
+					_react2.default.createElement(
+						'ul',
+						null,
+						_react2.default.createElement(
+							'li',
+							null,
+							'componentWillReceiveProps(object nextProps)\uFF1A\u5DF2\u52A0\u8F7D\u7EC4\u4EF6\u6536\u5230\u65B0\u7684\u53C2\u6570\u65F6\u8C03\u7528'
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							'shouldComponentUpdate(object nextProps, object nextState)\uFF1A\u7EC4\u4EF6\u5224\u65AD\u662F\u5426\u91CD\u65B0\u6E32\u67D3\u65F6\u8C03\u7528'
+						)
+					),
+					_react2.default.createElement(
+						_example2.default,
+						{ title: 'React\u751F\u547D\u5468\u671F\u5B9E\u4F8B', codeQure: _code2.default.LifecExample },
+						_react2.default.createElement(LifecExample, null)
+					)
+				);
+			}
+		}]);
+
+		return Lifec;
+	}(_react.Component);
+
+	var Ajaxc = function (_Component10) {
+		_inherits(Ajaxc, _Component10);
+
+		function Ajaxc() {
+			_classCallCheck(this, Ajaxc);
+
+			return _possibleConstructorReturn(this, (Ajaxc.__proto__ || Object.getPrototypeOf(Ajaxc)).apply(this, arguments));
+		}
+
+		_createClass(Ajaxc, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ id: 'Ajaxc' },
+					_react2.default.createElement(
+						'h2',
+						{ className: 'page-header' },
+						'React Ajax'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'\u672C\u677F\u5757\u4ECB\u7ECD\u4E24\u79CDajax\u65B9\u5F0F\uFF0C\u4E00\u79CD\u662Fjquery ajax \u53E6\u4E00\u79CD\u662F react fetch\u7EC4\u4EF6\u5B9E\u73B0ajax'
+					),
+					_react2.default.createElement(
+						_example2.default,
+						{ title: 'jquery AJAX \u6574\u5408react\u5B9E\u4F8B', codeQure: _code2.default.GetList },
+						_react2.default.createElement(GetList, { sources: 'https://api.github.com/users/octocat/gists' })
+					),
+					_react2.default.createElement(
+						_example2.default,
+						{ title: '\u6574\u5408react fetch\u6570\u636E\u4EA4\u4E92\u5B9E\u4F8B', codeQure: _code2.default.FetchGetList },
+						_react2.default.createElement(FetchGetList, { sources: 'https://offline-news-api.herokuapp.com/stories' })
+					)
+				);
+			}
+		}]);
+
+		return Ajaxc;
 	}(_react.Component);
 
 	/********华********丽********的********分********割********线********/
@@ -27939,8 +28093,8 @@
 	/*测试组件类*/
 
 
-	var HelloWrold = function (_Component6) {
-		_inherits(HelloWrold, _Component6);
+	var HelloWrold = function (_Component11) {
+		_inherits(HelloWrold, _Component11);
 
 		function HelloWrold() {
 			_classCallCheck(this, HelloWrold);
@@ -27964,18 +28118,18 @@
 	/*双向数据绑定*/
 
 
-	var TowWayData = function (_Component7) {
-		_inherits(TowWayData, _Component7);
+	var TowWayData = function (_Component12) {
+		_inherits(TowWayData, _Component12);
 
 		function TowWayData(props) {
 			_classCallCheck(this, TowWayData);
 
-			var _this7 = _possibleConstructorReturn(this, (TowWayData.__proto__ || Object.getPrototypeOf(TowWayData)).call(this, props));
+			var _this12 = _possibleConstructorReturn(this, (TowWayData.__proto__ || Object.getPrototypeOf(TowWayData)).call(this, props));
 
-			_this7.state = {
+			_this12.state = {
 				name: ""
 			};
-			return _this7;
+			return _this12;
 		}
 
 		_createClass(TowWayData, [{
@@ -28005,8 +28159,8 @@
 	/*JSX 操作*/
 
 
-	var Arrjsx = function (_Component8) {
-		_inherits(Arrjsx, _Component8);
+	var Arrjsx = function (_Component13) {
+		_inherits(Arrjsx, _Component13);
 
 		function Arrjsx() {
 			_classCallCheck(this, Arrjsx);
@@ -28035,8 +28189,8 @@
 		return Arrjsx;
 	}(_react.Component);
 
-	var Arrjsx2 = function (_Component9) {
-		_inherits(Arrjsx2, _Component9);
+	var Arrjsx2 = function (_Component14) {
+		_inherits(Arrjsx2, _Component14);
 
 		function Arrjsx2() {
 			_classCallCheck(this, Arrjsx2);
@@ -28071,8 +28225,8 @@
 	/*React 组件案例初始化*/
 
 
-	var HelloMessage = function (_Component10) {
-		_inherits(HelloMessage, _Component10);
+	var HelloMessage = function (_Component15) {
+		_inherits(HelloMessage, _Component15);
 
 		function HelloMessage() {
 			_classCallCheck(this, HelloMessage);
@@ -28098,8 +28252,8 @@
 	/*PropsChildren*/
 
 
-	var NotesList = function (_Component11) {
-		_inherits(NotesList, _Component11);
+	var NotesList = function (_Component16) {
+		_inherits(NotesList, _Component16);
 
 		function NotesList() {
 			_classCallCheck(this, NotesList);
@@ -28127,8 +28281,8 @@
 		return NotesList;
 	}(_react.Component);
 
-	var ProptypesShow = function (_Component12) {
-		_inherits(ProptypesShow, _Component12);
+	var ProptypesShow = function (_Component17) {
+		_inherits(ProptypesShow, _Component17);
 
 		function ProptypesShow() {
 			_classCallCheck(this, ProptypesShow);
@@ -28162,11 +28316,310 @@
 		str: "djfadsjkf"
 	};
 
+	var DomcExample = function (_Component18) {
+		_inherits(DomcExample, _Component18);
+
+		function DomcExample() {
+			_classCallCheck(this, DomcExample);
+
+			return _possibleConstructorReturn(this, (DomcExample.__proto__ || Object.getPrototypeOf(DomcExample)).apply(this, arguments));
+		}
+
+		_createClass(DomcExample, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ id: 'DomcExample' },
+					_react2.default.createElement('input', { type: 'text', ref: 'myInput' }),
+					_react2.default.createElement('input', { type: 'button', value: '\u70B9\u51FB\u64CD\u4F5C', onClick: this.handleClick.bind(this) })
+				);
+			}
+		}, {
+			key: 'handleClick',
+			value: function handleClick() {
+				this.refs.myInput.focus();
+			}
+		}]);
+
+		return DomcExample;
+	}(_react.Component);
+
+	var StateExample = function (_Component19) {
+		_inherits(StateExample, _Component19);
+
+		function StateExample(props) {
+			_classCallCheck(this, StateExample);
+
+			var _this19 = _possibleConstructorReturn(this, (StateExample.__proto__ || Object.getPrototypeOf(StateExample)).call(this, props));
+
+			_this19.state = { like: false };
+			return _this19;
+		}
+
+		_createClass(StateExample, [{
+			key: 'render',
+			value: function render() {
+				var text = this.state.like ? "I like" : "I don't like";
+				return _react2.default.createElement(
+					'div',
+					{ id: 'StateExample' },
+					_react2.default.createElement(
+						'p',
+						{ onClick: this.handleClick.bind(this) },
+						text
+					)
+				);
+			}
+		}, {
+			key: 'handleClick',
+			value: function handleClick() {
+				this.setState({ like: !this.state.like });
+			}
+		}]);
+
+		return StateExample;
+	}(_react.Component);
+
+	var FormExample = function (_Component20) {
+		_inherits(FormExample, _Component20);
+
+		function FormExample(props) {
+			_classCallCheck(this, FormExample);
+
+			var _this20 = _possibleConstructorReturn(this, (FormExample.__proto__ || Object.getPrototypeOf(FormExample)).call(this, props));
+
+			_this20.state = { fValue: '' };
+			return _this20;
+		}
+
+		_createClass(FormExample, [{
+			key: 'render',
+			value: function render() {
+				var text = this.state.fValue;
+
+				return _react2.default.createElement(
+					'div',
+					{ id: 'FormExample' },
+					_react2.default.createElement('input', { type: 'text', value: this.state.fValue, onChange: this.handleChange.bind(this) }),
+					_react2.default.createElement(
+						'p',
+						null,
+						text
+					)
+				);
+			}
+		}, {
+			key: 'handleChange',
+			value: function handleChange(e) {
+				this.setState({ fValue: e.target.value });
+			}
+		}]);
+
+		return FormExample;
+	}(_react.Component);
+
+	var LifecExample = function (_Component21) {
+		_inherits(LifecExample, _Component21);
+
+		function LifecExample(props) {
+			_classCallCheck(this, LifecExample);
+
+			var _this21 = _possibleConstructorReturn(this, (LifecExample.__proto__ || Object.getPrototypeOf(LifecExample)).call(this, props));
+
+			_this21.state = { width: 0, text: "生命周期实例" };
+			return _this21;
+		}
+
+		_createClass(LifecExample, [{
+			key: 'componentWillMount',
+			value: function componentWillMount() {
+				var that = this;
+
+				this.timer = setInterval(function () {
+					var width = that.state.width;
+					width += 1;
+
+					if (width >= 600) {
+						width = 0;
+					}
+					that.setState({ width: width });
+				}, 12);
+			}
+		}, {
+			key: 'componentWillUnmount',
+			value: function componentWillUnmount() {
+				clearInterval(this.timer);
+				this.timer = null;
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ id: 'LifecExample' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'life', style: { width: this.state.width + "px" } },
+						this.state.text
+					)
+				);
+			}
+		}]);
+
+		return LifecExample;
+	}(_react.Component);
+
+	var GetList = function (_Component22) {
+		_inherits(GetList, _Component22);
+
+		function GetList(props) {
+			_classCallCheck(this, GetList);
+
+			var _this22 = _possibleConstructorReturn(this, (GetList.__proto__ || Object.getPrototypeOf(GetList)).call(this, props));
+
+			_this22.state = {
+				list: []
+			};
+			return _this22;
+		}
+
+		_createClass(GetList, [{
+			key: 'componentDidMount',
+			value: function componentDidMount() {
+				var that = this;
+				var url = this.props.sources;
+				$.ajax({
+					url: url,
+					type: "GET",
+					success: function success(result) {
+						that.setState({
+							list: result
+						});
+					},
+					error: function error(xhr, status, _error) {
+						console.log(status, _error);
+					}
+				});
+				// console.log(this.props.sources)
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+
+				var listStr = '';
+				var stateList = this.state.list;
+
+				console.log(listStr);
+				return _react2.default.createElement(
+					'ul',
+					{ id: 'GetList' },
+					stateList.length == 0 ? _react2.default.createElement(
+						'li',
+						null,
+						'\u52A0\u8F7D\u4E2D...'
+					) : stateList.map(function (c, k) {
+						return _react2.default.createElement(
+							'li',
+							{ key: k },
+							'\u7528\u6237\u540D: ',
+							c.owner.login,
+							' \u8BBF\u95EE\u8BF7',
+							_react2.default.createElement(
+								'a',
+								{ href: c.html_url, target: '_blank' },
+								'\u70B9\u51FB\u8FD9\u91CC'
+							)
+						);
+					})
+				);
+			}
+		}]);
+
+		return GetList;
+	}(_react.Component);
+
+	var FetchGetList = function (_Component23) {
+		_inherits(FetchGetList, _Component23);
+
+		function FetchGetList(props) {
+			_classCallCheck(this, FetchGetList);
+
+			var _this23 = _possibleConstructorReturn(this, (FetchGetList.__proto__ || Object.getPrototypeOf(FetchGetList)).call(this, props));
+
+			_this23.state = {
+				list: "",
+				btnState: "获取数据",
+				btndisable: false
+			};
+			return _this23;
+		}
+
+		_createClass(FetchGetList, [{
+			key: 'render',
+			value: function render() {
+				var me = this;
+
+				var listStr = me.state.list == "" ? _react2.default.createElement('div', null) : _react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(
+						'ul',
+						{ className: 'listWamp' },
+						me.state.list.map(function (item, i) {
+							return _react2.default.createElement(
+								'li',
+								{ key: i },
+								_react2.default.createElement(
+									'h2',
+									null,
+									item.title
+								),
+								_react2.default.createElement('div', { className: 'body', dangerouslySetInnerHTML: { __html: item.body } })
+							);
+						})
+					)
+				);
+				return _react2.default.createElement(
+					'div',
+					{ id: 'FetchGetList' },
+					_react2.default.createElement('input', { type: 'button', value: this.state.btnState, disabled: this.state.btndisable, onClick: this.handleGetDate.bind(this) }),
+					_react2.default.createElement(
+						'div',
+						{ className: 'dataList' },
+						listStr
+					)
+				);
+			}
+		}, {
+			key: 'handleGetDate',
+			value: function handleGetDate() {
+				var me = this;
+				this.setState({ btndisable: true, btnState: "加载中...请稍后" });
+				fetch(this.props.sources).then(function (result) {
+					if (result.status >= 400) {
+						throw new Error("请求错误");
+					}
+					return result.json();
+				}).then(function (data) {
+					me.setState({ list: data, btndisable: false, btnState: "加载完成...重新获取" });
+				});
+			}
+		}]);
+
+		return FetchGetList;
+	}(_react.Component);
+
 	exports.Hello = Hello;
 	exports.JsxSyntx = JsxSyntx;
 	exports.Comp = Comp;
 	exports.PropsChildren = PropsChildren;
 	exports.ProptypesEx = ProptypesEx;
+	exports.Domc = Domc;
+	exports.Statec = Statec;
+	exports.Formc = Formc;
+	exports.Lifec = Lifec;
+	exports.Ajaxc = Ajaxc;
 
 /***/ },
 /* 244 */
@@ -42882,80 +43335,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(253)(module)))
 
 /***/ },
-/* 257 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Tips = function (_Component) {
-		_inherits(Tips, _Component);
-
-		function Tips() {
-			_classCallCheck(this, Tips);
-
-			return _possibleConstructorReturn(this, (Tips.__proto__ || Object.getPrototypeOf(Tips)).apply(this, arguments));
-		}
-
-		_createClass(Tips, [{
-			key: "render",
-			value: function render() {
-				return _react2.default.createElement(
-					"pre",
-					{ style: { display: "block", backgroundColor: "#1a1a1a", padding: "10px", color: "#ff0000", borderRadius: "0" } },
-					_react2.default.createElement(
-						"p",
-						null,
-						"1.\u76EE\u524D\u4E0D\u652F\u6301\u663E\u793A\u4EE3\u7801\u529F\u80FD,"
-					),
-					_react2.default.createElement(
-						"p",
-						null,
-						"2.\u5C0F\u83DC\u9E1F\u6B63\u5728\u52AA\u529B\u5F00\u53D1\u4E2D."
-					),
-					_react2.default.createElement(
-						"p",
-						null,
-						"3.\u7ED9\u60A8\u9020\u6210\u7684\u4E0D\u4FBF\u8BF7\u8C05\u89E3."
-					),
-					_react2.default.createElement(
-						"p",
-						null,
-						"4.\u8BE6\u7EC6\u4EE3\u7801\u8BF7\u70B9\u51FB ",
-						_react2.default.createElement(
-							"a",
-							{ href: "https://github.com/healen/study-react" },
-							"https://github.com/healen/study-react"
-						),
-						" "
-					)
-				);
-			}
-		}]);
-
-		return Tips;
-	}(_react.Component);
-
-	exports.default = Tips;
-
-/***/ },
+/* 257 */,
 /* 258 */
 /***/ function(module, exports) {
 
@@ -42977,10 +43357,1671 @@
 
 		children: "class NotesList extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<ol>\n\t\t\t\t{\n\t\t\t\t\tthis.props.children.map(function(child,key){\n\t\t\t\t\t\treturn <li key={key}>{child}</li>\n\t\t\t\t\t})\n\t\t\t\t}\n\t\t\t</ol>\n\t\t)\n\t}\n}\n/*\u6E32\u67D3\u8BE5\u7EC4\u4EF6*/\nReactDOM.render(\n\t<NotesList>\n\t\t<span>\u6211\u662F\u7B2C\u4E00\u4E2A\u5B50\u5143\u7D20</span>\n\t\t<span>\u6211\u662F\u7B2C\u4E8C\u4E2A\u5B50\u5143\u7D20</span>\n\t\t<span>\u6211\u662F\u7B2C\u4E09\u4E2A\u5B50\u5143\u7D20</span>\n\t\t<span>...</span>\n\t\t<span>\u6211\u662F\u7B2CN\u4E2A\u5B50\u5143\u7D20</span>\n\t</NotesList>,\n\tdocument.getElementById('app')\n)",
 
-		ProptypesShow: "class ProptypesShow extends Component {\n\n\trender(){\n\t\treturn (\n\t\t\t<div id=\"ProptypesShow\">\n\t\t\t\t<span>{this.props.str}</span>\n\t\t\t</div>\n\t\t)\n\t}\n\n}\n\nProptypesShow.propTypes = {\n\tstr:React.PropTypes.string\n}\n\nProptypesShow.defaultProps = {\n  str: \"djfadsjkf\"\n}/*\u6E32\u67D3\u8BE5\u7EC4\u4EF6*/\nReactDOM.render(\n\t<ProptypesShow></ProptypesShow>,\n\tdocument.getElementById('app')\n)"
+		ProptypesShow: "class ProptypesShow extends Component {\n\n\trender(){\n\t\treturn (\n\t\t\t<div id=\"ProptypesShow\">\n\t\t\t\t<span>{this.props.str}</span>\n\t\t\t</div>\n\t\t)\n\t}\n\n}\n\nProptypesShow.propTypes = {\n\tstr:React.PropTypes.string\n}\n\nProptypesShow.defaultProps = {\n  str: \"djfadsjkf\"\n}/*\u6E32\u67D3\u8BE5\u7EC4\u4EF6*/\nReactDOM.render(\n\t<ProptypesShow></ProptypesShow>,\n\tdocument.getElementById('app')\n)",
+
+		DomcExample: "class DomcExample extends Component {\n\trender(){\n\t\treturn (\n\n\t\t\t<div id=\"DomcExample\">\n\t\t\t\t<input type=\"text\" ref=\"myInput\"/>\n\t\t\t\t<input type=\"button\" value=\"\u70B9\u51FB\u64CD\u4F5C\" onClick={this.handleClick.bind(this)} />\n\t\t\t</div>\n\t\t)\n\t}\n\n\thandleClick(){\n\t\tthis.refs.myInput.focus()\n\t}\n}/*\u6E32\u67D3\u8BE5\u7EC4\u4EF6*/\nReactDOM.render(\n\t<DomcExample></DomcExample>,\n\tdocument.getElementById('app')\n)",
+
+		StateExample: "class StateExample extends Component {\n\tconstructor(props) {\n\t  super(props);\n\t\n\t  this.state = {like:false};\n\t}\n\trender(){\n\t\tvar text = this.state.like? \"I like\" : \"I don't like\"\n\t\treturn (\n\t\t\t<div id=\"StateExample\">\n\t\t\t\t<p onClick={this.handleClick.bind(this)}>{text}</p>\n\t\t\t</div>\n\t\t)\n\t}\n\n\thandleClick(){\n\t\tthis.setState({like:!this.state.like});\n\t}\n}\n/*\u6E32\u67D3\u8BE5\u7EC4\u4EF6*/\nReactDOM.render(\n\t<StateExample></StateExample>,\n\tdocument.getElementById('app')\n)",
+
+		FormExample: "class FormExample extends Component {\n\tconstructor(props) {\n\t  super(props);\n\t\n\t  this.state = {fValue:''};\n\t}\n\n\trender(){\n\t\tlet text = this.state.fValue;\n\n\t\treturn (\n\n\t\t\t<div id=\"FormExample\">\n\t\t\t\t<input type=\"text\" value={this.state.fValue} onChange={this.handleChange.bind(this)}/>\n\t\t\t\t<p>{text}</p>\n\t\t\t</div>\n\n\t\t)\n\t\t\n\t}\n\n\thandleChange(e){\n\t\tthis.setState({fValue:e.target.value})\n\n\t}\n}\n/*\u6E32\u67D3\u8BE5\u7EC4\u4EF6*/\nReactDOM.render(\n\t<FormExample></FormExample>,\n\tdocument.getElementById('app')\n)",
+
+		LifecExample: "class LifecExample extends Component{\n\tconstructor(props) {\n\t  super(props);\n\t\n\t  this.state = {width:0,text:\"\u751F\u547D\u5468\u671F\u5B9E\u4F8B\"};\n\t}\n\n\tcomponentDidMount(){\n\t\tvar that = this;\n\n\t\tthis.timer=setInterval(function(){\n\t\t\tvar width = that.state.width;\n\t\t\twidth+=1;\n\n\t\t\tif(width>=600){\n\t\t\t\twidth=0;\n\t\t\t}\n\t\t\tthat.setState({width:width})\n\t\t}, 12)\n\n\t}\n\trender(){\n\t\treturn (\n\t\t\t<div id=\"LifecExample\">\n\t\t\t\t<div className=\"life\" style={{width:this.state.width+\"px\"}}>\n\t\t\t\t\t{this.state.text}\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t)\n\t}\n\n}/*\u6E32\u67D3\u8BE5\u7EC4\u4EF6*/\nReactDOM.render(\n\t<LifecExample></LifecExample>,\n\tdocument.getElementById('app')\n)",
+
+		GetList: "class GetList extends Component {\n\tconstructor(props) {\n\t  super(props);\n\t\n\t  this.state = {\n\t  \tlist:[]\n\t  };\n\t}\n\n\n\tcomponentDidMount(){\n\t\tvar that = this;\n\t\tvar url = this.props.sources;\n\t\t$.ajax({\n\t\t\turl:url,\n\t\t\ttype:\"GET\",\n\t\t\tsuccess:function(result){\n\t\t\t\tthat.setState({\n\t\t\t\t\tlist:result\n\t\t\t\t})\n\n\n\t\t\t},\n\t\t\terror:function(xhr,status,error){\n\t\t\t\tconsole.log(status,error)\n\t\t\t}\n\t\t})\n\t\t// console.log(this.props.sources)\n\t}\n\n\trender(){\n\n\t\tvar listStr = '';\n\t\tvar stateList = this.state.list;\n\n\t\tconsole.log(listStr)\n\t\treturn (\n\t\t\t<ul id=\"GetList\">\n\t\t\t\t{\n\t\t\t\t\tstateList.length==0? (<li>\u52A0\u8F7D\u4E2D...</li>) : stateList.map(function(c,k){\n\t\t\t\t\t\treturn (\n\n\t\t\t\t\t\t\t<li key={k}>\n\t\t\t\t\t\t\t\t\u7528\u6237\u540D: {c.owner.login} \u8BBF\u95EE\u8BF7<a href={c.html_url} target=\"_blank\">\u70B9\u51FB\u8FD9\u91CC</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t)\n\t\t\t\t\t})\n\t\t\t\t}\n\t\t\t</ul>\n\n\t\t)\n\t\t\n\t}\n}/*\u6E32\u67D3\u8BE5\u7EC4\u4EF6*/\nReactDOM.render(\n\t<GetList sources=\"https://api.github.com/users/octocat/gists\" />,\n\tdocument.getElementById('app')\n)",
+
+		FetchGetList: "class FetchGetList extends Component {\n\tconstructor(props) {\n\t  super(props);\n\t\n\t  this.state = {\n\t  \tlist:\"\",\n\t  \tbtnState:\"\u83B7\u53D6\u6570\u636E\",\n\t  \tbtndisable:false\n\t  };\n\t}\n\n\trender(){\n\t\tvar me = this\n\n\t\tvar listStr = me.state.list==\"\"?(<div></div>):(\n\t\t\t\t<div>\n\t\t\t\t\t<ul className=\"listWamp\">\n\t\t\t\t\t{\n\t\t\t\t\t\tme.state.list.map(function(item,i){\n\t\t\t\t\t\t\treturn (\n\t\t\t\t\t\t\t\t<li key={i}>\n\t\t\t\t\t\t\t\t\t<h2>{item.title}</h2>\n\t\t\t\n\t\t\t\t\t\t\t\t\t<div className=\"body\" dangerouslySetInnerHTML={{__html: item.body}}/>\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t})\t\n\t\t\t\t\t}\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t)\n\t\treturn (\n\t\t\t<div id=\"FetchGetList\">\n\t\t\t\t<input type=\"button\" value={this.state.btnState} disabled={this.state.btndisable} onClick={this.handleGetDate.bind(this)}/>\n\t\t\t\t<div className=\"dataList\">\n\n\t\t\t\t{listStr}\n\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t)\n\t}\n\n\thandleGetDate(){\n\t\tvar me = this;\n\t\tthis.setState({btndisable:true,btnState:\"\u52A0\u8F7D\u4E2D...\u8BF7\u7A0D\u540E\"})\n\t\tfetch(this.props.sources).then(function(result){\n\t\t\tif(result.status>=400){\n\t\t\t\tthrow new Error(\"\u8BF7\u6C42\u9519\u8BEF\")\n\t\t\t}\n\t\t\treturn result.json();\n\t\t}).then(function(data){\n\t\t\tme.setState({list:data,btndisable:false,btnState:\"\u52A0\u8F7D\u5B8C\u6210...\u91CD\u65B0\u83B7\u53D6\"})\n\n\t\t})\n\t}\n}\nReactDOM.render(\n\t<FetchGetList sources=\"https://offline-news-api.herokuapp.com/stories\" />,\n\tdocument.getElementById('app')\n)\n"
 
 	};
 	exports.default = code;
+
+/***/ },
+/* 259 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var require;var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(process, global) {'use strict';
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	/*!
+	 * @overview es6-promise - a tiny implementation of Promises/A+.
+	 * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
+	 * @license   Licensed under MIT license
+	 *            See https://raw.githubusercontent.com/stefanpenner/es6-promise/master/LICENSE
+	 * @version   4.1.0
+	 */
+
+	(function (global, factory) {
+	  ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory() :  true ? !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : global.ES6Promise = factory();
+	})(undefined, function () {
+	  'use strict';
+
+	  function objectOrFunction(x) {
+	    return typeof x === 'function' || (typeof x === 'undefined' ? 'undefined' : _typeof(x)) === 'object' && x !== null;
+	  }
+
+	  function isFunction(x) {
+	    return typeof x === 'function';
+	  }
+
+	  var _isArray = undefined;
+	  if (!Array.isArray) {
+	    _isArray = function _isArray(x) {
+	      return Object.prototype.toString.call(x) === '[object Array]';
+	    };
+	  } else {
+	    _isArray = Array.isArray;
+	  }
+
+	  var isArray = _isArray;
+
+	  var len = 0;
+	  var vertxNext = undefined;
+	  var customSchedulerFn = undefined;
+
+	  var asap = function asap(callback, arg) {
+	    queue[len] = callback;
+	    queue[len + 1] = arg;
+	    len += 2;
+	    if (len === 2) {
+	      // If len is 2, that means that we need to schedule an async flush.
+	      // If additional callbacks are queued before the queue is flushed, they
+	      // will be processed by this flush that we are scheduling.
+	      if (customSchedulerFn) {
+	        customSchedulerFn(flush);
+	      } else {
+	        scheduleFlush();
+	      }
+	    }
+	  };
+
+	  function setScheduler(scheduleFn) {
+	    customSchedulerFn = scheduleFn;
+	  }
+
+	  function setAsap(asapFn) {
+	    asap = asapFn;
+	  }
+
+	  var browserWindow = typeof window !== 'undefined' ? window : undefined;
+	  var browserGlobal = browserWindow || {};
+	  var BrowserMutationObserver = browserGlobal.MutationObserver || browserGlobal.WebKitMutationObserver;
+	  var isNode = typeof self === 'undefined' && typeof process !== 'undefined' && {}.toString.call(process) === '[object process]';
+
+	  // test for web worker but not in IE10
+	  var isWorker = typeof Uint8ClampedArray !== 'undefined' && typeof importScripts !== 'undefined' && typeof MessageChannel !== 'undefined';
+
+	  // node
+	  function useNextTick() {
+	    // node version 0.10.x displays a deprecation warning when nextTick is used recursively
+	    // see https://github.com/cujojs/when/issues/410 for details
+	    return function () {
+	      return process.nextTick(flush);
+	    };
+	  }
+
+	  // vertx
+	  function useVertxTimer() {
+	    if (typeof vertxNext !== 'undefined') {
+	      return function () {
+	        vertxNext(flush);
+	      };
+	    }
+
+	    return useSetTimeout();
+	  }
+
+	  function useMutationObserver() {
+	    var iterations = 0;
+	    var observer = new BrowserMutationObserver(flush);
+	    var node = document.createTextNode('');
+	    observer.observe(node, { characterData: true });
+
+	    return function () {
+	      node.data = iterations = ++iterations % 2;
+	    };
+	  }
+
+	  // web worker
+	  function useMessageChannel() {
+	    var channel = new MessageChannel();
+	    channel.port1.onmessage = flush;
+	    return function () {
+	      return channel.port2.postMessage(0);
+	    };
+	  }
+
+	  function useSetTimeout() {
+	    // Store setTimeout reference so es6-promise will be unaffected by
+	    // other code modifying setTimeout (like sinon.useFakeTimers())
+	    var globalSetTimeout = setTimeout;
+	    return function () {
+	      return globalSetTimeout(flush, 1);
+	    };
+	  }
+
+	  var queue = new Array(1000);
+	  function flush() {
+	    for (var i = 0; i < len; i += 2) {
+	      var callback = queue[i];
+	      var arg = queue[i + 1];
+
+	      callback(arg);
+
+	      queue[i] = undefined;
+	      queue[i + 1] = undefined;
+	    }
+
+	    len = 0;
+	  }
+
+	  function attemptVertx() {
+	    try {
+	      var r = require;
+	      var vertx = __webpack_require__(260);
+	      vertxNext = vertx.runOnLoop || vertx.runOnContext;
+	      return useVertxTimer();
+	    } catch (e) {
+	      return useSetTimeout();
+	    }
+	  }
+
+	  var scheduleFlush = undefined;
+	  // Decide what async method to use to triggering processing of queued callbacks:
+	  if (isNode) {
+	    scheduleFlush = useNextTick();
+	  } else if (BrowserMutationObserver) {
+	    scheduleFlush = useMutationObserver();
+	  } else if (isWorker) {
+	    scheduleFlush = useMessageChannel();
+	  } else if (browserWindow === undefined && "function" === 'function') {
+	    scheduleFlush = attemptVertx();
+	  } else {
+	    scheduleFlush = useSetTimeout();
+	  }
+
+	  function then(onFulfillment, onRejection) {
+	    var _arguments = arguments;
+
+	    var parent = this;
+
+	    var child = new this.constructor(noop);
+
+	    if (child[PROMISE_ID] === undefined) {
+	      makePromise(child);
+	    }
+
+	    var _state = parent._state;
+
+	    if (_state) {
+	      (function () {
+	        var callback = _arguments[_state - 1];
+	        asap(function () {
+	          return invokeCallback(_state, child, callback, parent._result);
+	        });
+	      })();
+	    } else {
+	      subscribe(parent, child, onFulfillment, onRejection);
+	    }
+
+	    return child;
+	  }
+
+	  /**
+	    `Promise.resolve` returns a promise that will become resolved with the
+	    passed `value`. It is shorthand for the following:
+	  
+	    ```javascript
+	    let promise = new Promise(function(resolve, reject){
+	      resolve(1);
+	    });
+	  
+	    promise.then(function(value){
+	      // value === 1
+	    });
+	    ```
+	  
+	    Instead of writing the above, your code now simply becomes the following:
+	  
+	    ```javascript
+	    let promise = Promise.resolve(1);
+	  
+	    promise.then(function(value){
+	      // value === 1
+	    });
+	    ```
+	  
+	    @method resolve
+	    @static
+	    @param {Any} value value that the returned promise will be resolved with
+	    Useful for tooling.
+	    @return {Promise} a promise that will become fulfilled with the given
+	    `value`
+	  */
+	  function resolve(object) {
+	    /*jshint validthis:true */
+	    var Constructor = this;
+
+	    if (object && (typeof object === 'undefined' ? 'undefined' : _typeof(object)) === 'object' && object.constructor === Constructor) {
+	      return object;
+	    }
+
+	    var promise = new Constructor(noop);
+	    _resolve(promise, object);
+	    return promise;
+	  }
+
+	  var PROMISE_ID = Math.random().toString(36).substring(16);
+
+	  function noop() {}
+
+	  var PENDING = void 0;
+	  var FULFILLED = 1;
+	  var REJECTED = 2;
+
+	  var GET_THEN_ERROR = new ErrorObject();
+
+	  function selfFulfillment() {
+	    return new TypeError("You cannot resolve a promise with itself");
+	  }
+
+	  function cannotReturnOwn() {
+	    return new TypeError('A promises callback cannot return that same promise.');
+	  }
+
+	  function getThen(promise) {
+	    try {
+	      return promise.then;
+	    } catch (error) {
+	      GET_THEN_ERROR.error = error;
+	      return GET_THEN_ERROR;
+	    }
+	  }
+
+	  function tryThen(then, value, fulfillmentHandler, rejectionHandler) {
+	    try {
+	      then.call(value, fulfillmentHandler, rejectionHandler);
+	    } catch (e) {
+	      return e;
+	    }
+	  }
+
+	  function handleForeignThenable(promise, thenable, then) {
+	    asap(function (promise) {
+	      var sealed = false;
+	      var error = tryThen(then, thenable, function (value) {
+	        if (sealed) {
+	          return;
+	        }
+	        sealed = true;
+	        if (thenable !== value) {
+	          _resolve(promise, value);
+	        } else {
+	          fulfill(promise, value);
+	        }
+	      }, function (reason) {
+	        if (sealed) {
+	          return;
+	        }
+	        sealed = true;
+
+	        _reject(promise, reason);
+	      }, 'Settle: ' + (promise._label || ' unknown promise'));
+
+	      if (!sealed && error) {
+	        sealed = true;
+	        _reject(promise, error);
+	      }
+	    }, promise);
+	  }
+
+	  function handleOwnThenable(promise, thenable) {
+	    if (thenable._state === FULFILLED) {
+	      fulfill(promise, thenable._result);
+	    } else if (thenable._state === REJECTED) {
+	      _reject(promise, thenable._result);
+	    } else {
+	      subscribe(thenable, undefined, function (value) {
+	        return _resolve(promise, value);
+	      }, function (reason) {
+	        return _reject(promise, reason);
+	      });
+	    }
+	  }
+
+	  function handleMaybeThenable(promise, maybeThenable, then$$) {
+	    if (maybeThenable.constructor === promise.constructor && then$$ === then && maybeThenable.constructor.resolve === resolve) {
+	      handleOwnThenable(promise, maybeThenable);
+	    } else {
+	      if (then$$ === GET_THEN_ERROR) {
+	        _reject(promise, GET_THEN_ERROR.error);
+	        GET_THEN_ERROR.error = null;
+	      } else if (then$$ === undefined) {
+	        fulfill(promise, maybeThenable);
+	      } else if (isFunction(then$$)) {
+	        handleForeignThenable(promise, maybeThenable, then$$);
+	      } else {
+	        fulfill(promise, maybeThenable);
+	      }
+	    }
+	  }
+
+	  function _resolve(promise, value) {
+	    if (promise === value) {
+	      _reject(promise, selfFulfillment());
+	    } else if (objectOrFunction(value)) {
+	      handleMaybeThenable(promise, value, getThen(value));
+	    } else {
+	      fulfill(promise, value);
+	    }
+	  }
+
+	  function publishRejection(promise) {
+	    if (promise._onerror) {
+	      promise._onerror(promise._result);
+	    }
+
+	    publish(promise);
+	  }
+
+	  function fulfill(promise, value) {
+	    if (promise._state !== PENDING) {
+	      return;
+	    }
+
+	    promise._result = value;
+	    promise._state = FULFILLED;
+
+	    if (promise._subscribers.length !== 0) {
+	      asap(publish, promise);
+	    }
+	  }
+
+	  function _reject(promise, reason) {
+	    if (promise._state !== PENDING) {
+	      return;
+	    }
+	    promise._state = REJECTED;
+	    promise._result = reason;
+
+	    asap(publishRejection, promise);
+	  }
+
+	  function subscribe(parent, child, onFulfillment, onRejection) {
+	    var _subscribers = parent._subscribers;
+	    var length = _subscribers.length;
+
+	    parent._onerror = null;
+
+	    _subscribers[length] = child;
+	    _subscribers[length + FULFILLED] = onFulfillment;
+	    _subscribers[length + REJECTED] = onRejection;
+
+	    if (length === 0 && parent._state) {
+	      asap(publish, parent);
+	    }
+	  }
+
+	  function publish(promise) {
+	    var subscribers = promise._subscribers;
+	    var settled = promise._state;
+
+	    if (subscribers.length === 0) {
+	      return;
+	    }
+
+	    var child = undefined,
+	        callback = undefined,
+	        detail = promise._result;
+
+	    for (var i = 0; i < subscribers.length; i += 3) {
+	      child = subscribers[i];
+	      callback = subscribers[i + settled];
+
+	      if (child) {
+	        invokeCallback(settled, child, callback, detail);
+	      } else {
+	        callback(detail);
+	      }
+	    }
+
+	    promise._subscribers.length = 0;
+	  }
+
+	  function ErrorObject() {
+	    this.error = null;
+	  }
+
+	  var TRY_CATCH_ERROR = new ErrorObject();
+
+	  function tryCatch(callback, detail) {
+	    try {
+	      return callback(detail);
+	    } catch (e) {
+	      TRY_CATCH_ERROR.error = e;
+	      return TRY_CATCH_ERROR;
+	    }
+	  }
+
+	  function invokeCallback(settled, promise, callback, detail) {
+	    var hasCallback = isFunction(callback),
+	        value = undefined,
+	        error = undefined,
+	        succeeded = undefined,
+	        failed = undefined;
+
+	    if (hasCallback) {
+	      value = tryCatch(callback, detail);
+
+	      if (value === TRY_CATCH_ERROR) {
+	        failed = true;
+	        error = value.error;
+	        value.error = null;
+	      } else {
+	        succeeded = true;
+	      }
+
+	      if (promise === value) {
+	        _reject(promise, cannotReturnOwn());
+	        return;
+	      }
+	    } else {
+	      value = detail;
+	      succeeded = true;
+	    }
+
+	    if (promise._state !== PENDING) {
+	      // noop
+	    } else if (hasCallback && succeeded) {
+	      _resolve(promise, value);
+	    } else if (failed) {
+	      _reject(promise, error);
+	    } else if (settled === FULFILLED) {
+	      fulfill(promise, value);
+	    } else if (settled === REJECTED) {
+	      _reject(promise, value);
+	    }
+	  }
+
+	  function initializePromise(promise, resolver) {
+	    try {
+	      resolver(function resolvePromise(value) {
+	        _resolve(promise, value);
+	      }, function rejectPromise(reason) {
+	        _reject(promise, reason);
+	      });
+	    } catch (e) {
+	      _reject(promise, e);
+	    }
+	  }
+
+	  var id = 0;
+	  function nextId() {
+	    return id++;
+	  }
+
+	  function makePromise(promise) {
+	    promise[PROMISE_ID] = id++;
+	    promise._state = undefined;
+	    promise._result = undefined;
+	    promise._subscribers = [];
+	  }
+
+	  function Enumerator(Constructor, input) {
+	    this._instanceConstructor = Constructor;
+	    this.promise = new Constructor(noop);
+
+	    if (!this.promise[PROMISE_ID]) {
+	      makePromise(this.promise);
+	    }
+
+	    if (isArray(input)) {
+	      this._input = input;
+	      this.length = input.length;
+	      this._remaining = input.length;
+
+	      this._result = new Array(this.length);
+
+	      if (this.length === 0) {
+	        fulfill(this.promise, this._result);
+	      } else {
+	        this.length = this.length || 0;
+	        this._enumerate();
+	        if (this._remaining === 0) {
+	          fulfill(this.promise, this._result);
+	        }
+	      }
+	    } else {
+	      _reject(this.promise, validationError());
+	    }
+	  }
+
+	  function validationError() {
+	    return new Error('Array Methods must be provided an Array');
+	  };
+
+	  Enumerator.prototype._enumerate = function () {
+	    var length = this.length;
+	    var _input = this._input;
+
+	    for (var i = 0; this._state === PENDING && i < length; i++) {
+	      this._eachEntry(_input[i], i);
+	    }
+	  };
+
+	  Enumerator.prototype._eachEntry = function (entry, i) {
+	    var c = this._instanceConstructor;
+	    var resolve$$ = c.resolve;
+
+	    if (resolve$$ === resolve) {
+	      var _then = getThen(entry);
+
+	      if (_then === then && entry._state !== PENDING) {
+	        this._settledAt(entry._state, i, entry._result);
+	      } else if (typeof _then !== 'function') {
+	        this._remaining--;
+	        this._result[i] = entry;
+	      } else if (c === Promise) {
+	        var promise = new c(noop);
+	        handleMaybeThenable(promise, entry, _then);
+	        this._willSettleAt(promise, i);
+	      } else {
+	        this._willSettleAt(new c(function (resolve$$) {
+	          return resolve$$(entry);
+	        }), i);
+	      }
+	    } else {
+	      this._willSettleAt(resolve$$(entry), i);
+	    }
+	  };
+
+	  Enumerator.prototype._settledAt = function (state, i, value) {
+	    var promise = this.promise;
+
+	    if (promise._state === PENDING) {
+	      this._remaining--;
+
+	      if (state === REJECTED) {
+	        _reject(promise, value);
+	      } else {
+	        this._result[i] = value;
+	      }
+	    }
+
+	    if (this._remaining === 0) {
+	      fulfill(promise, this._result);
+	    }
+	  };
+
+	  Enumerator.prototype._willSettleAt = function (promise, i) {
+	    var enumerator = this;
+
+	    subscribe(promise, undefined, function (value) {
+	      return enumerator._settledAt(FULFILLED, i, value);
+	    }, function (reason) {
+	      return enumerator._settledAt(REJECTED, i, reason);
+	    });
+	  };
+
+	  /**
+	    `Promise.all` accepts an array of promises, and returns a new promise which
+	    is fulfilled with an array of fulfillment values for the passed promises, or
+	    rejected with the reason of the first passed promise to be rejected. It casts all
+	    elements of the passed iterable to promises as it runs this algorithm.
+	  
+	    Example:
+	  
+	    ```javascript
+	    let promise1 = resolve(1);
+	    let promise2 = resolve(2);
+	    let promise3 = resolve(3);
+	    let promises = [ promise1, promise2, promise3 ];
+	  
+	    Promise.all(promises).then(function(array){
+	      // The array here would be [ 1, 2, 3 ];
+	    });
+	    ```
+	  
+	    If any of the `promises` given to `all` are rejected, the first promise
+	    that is rejected will be given as an argument to the returned promises's
+	    rejection handler. For example:
+	  
+	    Example:
+	  
+	    ```javascript
+	    let promise1 = resolve(1);
+	    let promise2 = reject(new Error("2"));
+	    let promise3 = reject(new Error("3"));
+	    let promises = [ promise1, promise2, promise3 ];
+	  
+	    Promise.all(promises).then(function(array){
+	      // Code here never runs because there are rejected promises!
+	    }, function(error) {
+	      // error.message === "2"
+	    });
+	    ```
+	  
+	    @method all
+	    @static
+	    @param {Array} entries array of promises
+	    @param {String} label optional string for labeling the promise.
+	    Useful for tooling.
+	    @return {Promise} promise that is fulfilled when all `promises` have been
+	    fulfilled, or rejected if any of them become rejected.
+	    @static
+	  */
+	  function all(entries) {
+	    return new Enumerator(this, entries).promise;
+	  }
+
+	  /**
+	    `Promise.race` returns a new promise which is settled in the same way as the
+	    first passed promise to settle.
+	  
+	    Example:
+	  
+	    ```javascript
+	    let promise1 = new Promise(function(resolve, reject){
+	      setTimeout(function(){
+	        resolve('promise 1');
+	      }, 200);
+	    });
+	  
+	    let promise2 = new Promise(function(resolve, reject){
+	      setTimeout(function(){
+	        resolve('promise 2');
+	      }, 100);
+	    });
+	  
+	    Promise.race([promise1, promise2]).then(function(result){
+	      // result === 'promise 2' because it was resolved before promise1
+	      // was resolved.
+	    });
+	    ```
+	  
+	    `Promise.race` is deterministic in that only the state of the first
+	    settled promise matters. For example, even if other promises given to the
+	    `promises` array argument are resolved, but the first settled promise has
+	    become rejected before the other promises became fulfilled, the returned
+	    promise will become rejected:
+	  
+	    ```javascript
+	    let promise1 = new Promise(function(resolve, reject){
+	      setTimeout(function(){
+	        resolve('promise 1');
+	      }, 200);
+	    });
+	  
+	    let promise2 = new Promise(function(resolve, reject){
+	      setTimeout(function(){
+	        reject(new Error('promise 2'));
+	      }, 100);
+	    });
+	  
+	    Promise.race([promise1, promise2]).then(function(result){
+	      // Code here never runs
+	    }, function(reason){
+	      // reason.message === 'promise 2' because promise 2 became rejected before
+	      // promise 1 became fulfilled
+	    });
+	    ```
+	  
+	    An example real-world use case is implementing timeouts:
+	  
+	    ```javascript
+	    Promise.race([ajax('foo.json'), timeout(5000)])
+	    ```
+	  
+	    @method race
+	    @static
+	    @param {Array} promises array of promises to observe
+	    Useful for tooling.
+	    @return {Promise} a promise which settles in the same way as the first passed
+	    promise to settle.
+	  */
+	  function race(entries) {
+	    /*jshint validthis:true */
+	    var Constructor = this;
+
+	    if (!isArray(entries)) {
+	      return new Constructor(function (_, reject) {
+	        return reject(new TypeError('You must pass an array to race.'));
+	      });
+	    } else {
+	      return new Constructor(function (resolve, reject) {
+	        var length = entries.length;
+	        for (var i = 0; i < length; i++) {
+	          Constructor.resolve(entries[i]).then(resolve, reject);
+	        }
+	      });
+	    }
+	  }
+
+	  /**
+	    `Promise.reject` returns a promise rejected with the passed `reason`.
+	    It is shorthand for the following:
+	  
+	    ```javascript
+	    let promise = new Promise(function(resolve, reject){
+	      reject(new Error('WHOOPS'));
+	    });
+	  
+	    promise.then(function(value){
+	      // Code here doesn't run because the promise is rejected!
+	    }, function(reason){
+	      // reason.message === 'WHOOPS'
+	    });
+	    ```
+	  
+	    Instead of writing the above, your code now simply becomes the following:
+	  
+	    ```javascript
+	    let promise = Promise.reject(new Error('WHOOPS'));
+	  
+	    promise.then(function(value){
+	      // Code here doesn't run because the promise is rejected!
+	    }, function(reason){
+	      // reason.message === 'WHOOPS'
+	    });
+	    ```
+	  
+	    @method reject
+	    @static
+	    @param {Any} reason value that the returned promise will be rejected with.
+	    Useful for tooling.
+	    @return {Promise} a promise rejected with the given `reason`.
+	  */
+	  function reject(reason) {
+	    /*jshint validthis:true */
+	    var Constructor = this;
+	    var promise = new Constructor(noop);
+	    _reject(promise, reason);
+	    return promise;
+	  }
+
+	  function needsResolver() {
+	    throw new TypeError('You must pass a resolver function as the first argument to the promise constructor');
+	  }
+
+	  function needsNew() {
+	    throw new TypeError("Failed to construct 'Promise': Please use the 'new' operator, this object constructor cannot be called as a function.");
+	  }
+
+	  /**
+	    Promise objects represent the eventual result of an asynchronous operation. The
+	    primary way of interacting with a promise is through its `then` method, which
+	    registers callbacks to receive either a promise's eventual value or the reason
+	    why the promise cannot be fulfilled.
+	  
+	    Terminology
+	    -----------
+	  
+	    - `promise` is an object or function with a `then` method whose behavior conforms to this specification.
+	    - `thenable` is an object or function that defines a `then` method.
+	    - `value` is any legal JavaScript value (including undefined, a thenable, or a promise).
+	    - `exception` is a value that is thrown using the throw statement.
+	    - `reason` is a value that indicates why a promise was rejected.
+	    - `settled` the final resting state of a promise, fulfilled or rejected.
+	  
+	    A promise can be in one of three states: pending, fulfilled, or rejected.
+	  
+	    Promises that are fulfilled have a fulfillment value and are in the fulfilled
+	    state.  Promises that are rejected have a rejection reason and are in the
+	    rejected state.  A fulfillment value is never a thenable.
+	  
+	    Promises can also be said to *resolve* a value.  If this value is also a
+	    promise, then the original promise's settled state will match the value's
+	    settled state.  So a promise that *resolves* a promise that rejects will
+	    itself reject, and a promise that *resolves* a promise that fulfills will
+	    itself fulfill.
+	  
+	  
+	    Basic Usage:
+	    ------------
+	  
+	    ```js
+	    let promise = new Promise(function(resolve, reject) {
+	      // on success
+	      resolve(value);
+	  
+	      // on failure
+	      reject(reason);
+	    });
+	  
+	    promise.then(function(value) {
+	      // on fulfillment
+	    }, function(reason) {
+	      // on rejection
+	    });
+	    ```
+	  
+	    Advanced Usage:
+	    ---------------
+	  
+	    Promises shine when abstracting away asynchronous interactions such as
+	    `XMLHttpRequest`s.
+	  
+	    ```js
+	    function getJSON(url) {
+	      return new Promise(function(resolve, reject){
+	        let xhr = new XMLHttpRequest();
+	  
+	        xhr.open('GET', url);
+	        xhr.onreadystatechange = handler;
+	        xhr.responseType = 'json';
+	        xhr.setRequestHeader('Accept', 'application/json');
+	        xhr.send();
+	  
+	        function handler() {
+	          if (this.readyState === this.DONE) {
+	            if (this.status === 200) {
+	              resolve(this.response);
+	            } else {
+	              reject(new Error('getJSON: `' + url + '` failed with status: [' + this.status + ']'));
+	            }
+	          }
+	        };
+	      });
+	    }
+	  
+	    getJSON('/posts.json').then(function(json) {
+	      // on fulfillment
+	    }, function(reason) {
+	      // on rejection
+	    });
+	    ```
+	  
+	    Unlike callbacks, promises are great composable primitives.
+	  
+	    ```js
+	    Promise.all([
+	      getJSON('/posts'),
+	      getJSON('/comments')
+	    ]).then(function(values){
+	      values[0] // => postsJSON
+	      values[1] // => commentsJSON
+	  
+	      return values;
+	    });
+	    ```
+	  
+	    @class Promise
+	    @param {function} resolver
+	    Useful for tooling.
+	    @constructor
+	  */
+	  function Promise(resolver) {
+	    this[PROMISE_ID] = nextId();
+	    this._result = this._state = undefined;
+	    this._subscribers = [];
+
+	    if (noop !== resolver) {
+	      typeof resolver !== 'function' && needsResolver();
+	      this instanceof Promise ? initializePromise(this, resolver) : needsNew();
+	    }
+	  }
+
+	  Promise.all = all;
+	  Promise.race = race;
+	  Promise.resolve = resolve;
+	  Promise.reject = reject;
+	  Promise._setScheduler = setScheduler;
+	  Promise._setAsap = setAsap;
+	  Promise._asap = asap;
+
+	  Promise.prototype = {
+	    constructor: Promise,
+
+	    /**
+	      The primary way of interacting with a promise is through its `then` method,
+	      which registers callbacks to receive either a promise's eventual value or the
+	      reason why the promise cannot be fulfilled.
+	    
+	      ```js
+	      findUser().then(function(user){
+	        // user is available
+	      }, function(reason){
+	        // user is unavailable, and you are given the reason why
+	      });
+	      ```
+	    
+	      Chaining
+	      --------
+	    
+	      The return value of `then` is itself a promise.  This second, 'downstream'
+	      promise is resolved with the return value of the first promise's fulfillment
+	      or rejection handler, or rejected if the handler throws an exception.
+	    
+	      ```js
+	      findUser().then(function (user) {
+	        return user.name;
+	      }, function (reason) {
+	        return 'default name';
+	      }).then(function (userName) {
+	        // If `findUser` fulfilled, `userName` will be the user's name, otherwise it
+	        // will be `'default name'`
+	      });
+	    
+	      findUser().then(function (user) {
+	        throw new Error('Found user, but still unhappy');
+	      }, function (reason) {
+	        throw new Error('`findUser` rejected and we're unhappy');
+	      }).then(function (value) {
+	        // never reached
+	      }, function (reason) {
+	        // if `findUser` fulfilled, `reason` will be 'Found user, but still unhappy'.
+	        // If `findUser` rejected, `reason` will be '`findUser` rejected and we're unhappy'.
+	      });
+	      ```
+	      If the downstream promise does not specify a rejection handler, rejection reasons will be propagated further downstream.
+	    
+	      ```js
+	      findUser().then(function (user) {
+	        throw new PedagogicalException('Upstream error');
+	      }).then(function (value) {
+	        // never reached
+	      }).then(function (value) {
+	        // never reached
+	      }, function (reason) {
+	        // The `PedgagocialException` is propagated all the way down to here
+	      });
+	      ```
+	    
+	      Assimilation
+	      ------------
+	    
+	      Sometimes the value you want to propagate to a downstream promise can only be
+	      retrieved asynchronously. This can be achieved by returning a promise in the
+	      fulfillment or rejection handler. The downstream promise will then be pending
+	      until the returned promise is settled. This is called *assimilation*.
+	    
+	      ```js
+	      findUser().then(function (user) {
+	        return findCommentsByAuthor(user);
+	      }).then(function (comments) {
+	        // The user's comments are now available
+	      });
+	      ```
+	    
+	      If the assimliated promise rejects, then the downstream promise will also reject.
+	    
+	      ```js
+	      findUser().then(function (user) {
+	        return findCommentsByAuthor(user);
+	      }).then(function (comments) {
+	        // If `findCommentsByAuthor` fulfills, we'll have the value here
+	      }, function (reason) {
+	        // If `findCommentsByAuthor` rejects, we'll have the reason here
+	      });
+	      ```
+	    
+	      Simple Example
+	      --------------
+	    
+	      Synchronous Example
+	    
+	      ```javascript
+	      let result;
+	    
+	      try {
+	        result = findResult();
+	        // success
+	      } catch(reason) {
+	        // failure
+	      }
+	      ```
+	    
+	      Errback Example
+	    
+	      ```js
+	      findResult(function(result, err){
+	        if (err) {
+	          // failure
+	        } else {
+	          // success
+	        }
+	      });
+	      ```
+	    
+	      Promise Example;
+	    
+	      ```javascript
+	      findResult().then(function(result){
+	        // success
+	      }, function(reason){
+	        // failure
+	      });
+	      ```
+	    
+	      Advanced Example
+	      --------------
+	    
+	      Synchronous Example
+	    
+	      ```javascript
+	      let author, books;
+	    
+	      try {
+	        author = findAuthor();
+	        books  = findBooksByAuthor(author);
+	        // success
+	      } catch(reason) {
+	        // failure
+	      }
+	      ```
+	    
+	      Errback Example
+	    
+	      ```js
+	    
+	      function foundBooks(books) {
+	    
+	      }
+	    
+	      function failure(reason) {
+	    
+	      }
+	    
+	      findAuthor(function(author, err){
+	        if (err) {
+	          failure(err);
+	          // failure
+	        } else {
+	          try {
+	            findBoooksByAuthor(author, function(books, err) {
+	              if (err) {
+	                failure(err);
+	              } else {
+	                try {
+	                  foundBooks(books);
+	                } catch(reason) {
+	                  failure(reason);
+	                }
+	              }
+	            });
+	          } catch(error) {
+	            failure(err);
+	          }
+	          // success
+	        }
+	      });
+	      ```
+	    
+	      Promise Example;
+	    
+	      ```javascript
+	      findAuthor().
+	        then(findBooksByAuthor).
+	        then(function(books){
+	          // found books
+	      }).catch(function(reason){
+	        // something went wrong
+	      });
+	      ```
+	    
+	      @method then
+	      @param {Function} onFulfilled
+	      @param {Function} onRejected
+	      Useful for tooling.
+	      @return {Promise}
+	    */
+	    then: then,
+
+	    /**
+	      `catch` is simply sugar for `then(undefined, onRejection)` which makes it the same
+	      as the catch block of a try/catch statement.
+	    
+	      ```js
+	      function findAuthor(){
+	        throw new Error('couldn't find that author');
+	      }
+	    
+	      // synchronous
+	      try {
+	        findAuthor();
+	      } catch(reason) {
+	        // something went wrong
+	      }
+	    
+	      // async with promises
+	      findAuthor().catch(function(reason){
+	        // something went wrong
+	      });
+	      ```
+	    
+	      @method catch
+	      @param {Function} onRejection
+	      Useful for tooling.
+	      @return {Promise}
+	    */
+	    'catch': function _catch(onRejection) {
+	      return this.then(null, onRejection);
+	    }
+	  };
+
+	  function polyfill() {
+	    var local = undefined;
+
+	    if (typeof global !== 'undefined') {
+	      local = global;
+	    } else if (typeof self !== 'undefined') {
+	      local = self;
+	    } else {
+	      try {
+	        local = Function('return this')();
+	      } catch (e) {
+	        throw new Error('polyfill failed because global object is unavailable in this environment');
+	      }
+	    }
+
+	    var P = local.Promise;
+
+	    if (P) {
+	      var promiseToString = null;
+	      try {
+	        promiseToString = Object.prototype.toString.call(P.resolve());
+	      } catch (e) {
+	        // silently ignored
+	      }
+
+	      if (promiseToString === '[object Promise]' && !P.cast) {
+	        return;
+	      }
+	    }
+
+	    local.Promise = Promise;
+	  }
+
+	  // Strange compat..
+	  Promise.polyfill = polyfill;
+	  Promise.Promise = Promise;
+
+	  return Promise;
+	});
+	//# sourceMappingURL=es6-promise.map
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), (function() { return this; }())))
+
+/***/ },
+/* 260 */
+/***/ function(module, exports) {
+
+	/* (ignored) */
+
+/***/ },
+/* 261 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	// the whatwg-fetch polyfill installs the fetch() function
+	// on the global object (window or self)
+	//
+	// Return that as the export for use in Webpack, Browserify etc.
+	__webpack_require__(262);
+	module.exports = self.fetch.bind(self);
+
+/***/ },
+/* 262 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	(function (self) {
+	  'use strict';
+
+	  if (self.fetch) {
+	    return;
+	  }
+
+	  var support = {
+	    searchParams: 'URLSearchParams' in self,
+	    iterable: 'Symbol' in self && 'iterator' in Symbol,
+	    blob: 'FileReader' in self && 'Blob' in self && function () {
+	      try {
+	        new Blob();
+	        return true;
+	      } catch (e) {
+	        return false;
+	      }
+	    }(),
+	    formData: 'FormData' in self,
+	    arrayBuffer: 'ArrayBuffer' in self
+	  };
+
+	  if (support.arrayBuffer) {
+	    var viewClasses = ['[object Int8Array]', '[object Uint8Array]', '[object Uint8ClampedArray]', '[object Int16Array]', '[object Uint16Array]', '[object Int32Array]', '[object Uint32Array]', '[object Float32Array]', '[object Float64Array]'];
+
+	    var isDataView = function isDataView(obj) {
+	      return obj && DataView.prototype.isPrototypeOf(obj);
+	    };
+
+	    var isArrayBufferView = ArrayBuffer.isView || function (obj) {
+	      return obj && viewClasses.indexOf(Object.prototype.toString.call(obj)) > -1;
+	    };
+	  }
+
+	  function normalizeName(name) {
+	    if (typeof name !== 'string') {
+	      name = String(name);
+	    }
+	    if (/[^a-z0-9\-#$%&'*+.\^_`|~]/i.test(name)) {
+	      throw new TypeError('Invalid character in header field name');
+	    }
+	    return name.toLowerCase();
+	  }
+
+	  function normalizeValue(value) {
+	    if (typeof value !== 'string') {
+	      value = String(value);
+	    }
+	    return value;
+	  }
+
+	  // Build a destructive iterator for the value list
+	  function iteratorFor(items) {
+	    var iterator = {
+	      next: function next() {
+	        var value = items.shift();
+	        return { done: value === undefined, value: value };
+	      }
+	    };
+
+	    if (support.iterable) {
+	      iterator[Symbol.iterator] = function () {
+	        return iterator;
+	      };
+	    }
+
+	    return iterator;
+	  }
+
+	  function Headers(headers) {
+	    this.map = {};
+
+	    if (headers instanceof Headers) {
+	      headers.forEach(function (value, name) {
+	        this.append(name, value);
+	      }, this);
+	    } else if (Array.isArray(headers)) {
+	      headers.forEach(function (header) {
+	        this.append(header[0], header[1]);
+	      }, this);
+	    } else if (headers) {
+	      Object.getOwnPropertyNames(headers).forEach(function (name) {
+	        this.append(name, headers[name]);
+	      }, this);
+	    }
+	  }
+
+	  Headers.prototype.append = function (name, value) {
+	    name = normalizeName(name);
+	    value = normalizeValue(value);
+	    var oldValue = this.map[name];
+	    this.map[name] = oldValue ? oldValue + ',' + value : value;
+	  };
+
+	  Headers.prototype['delete'] = function (name) {
+	    delete this.map[normalizeName(name)];
+	  };
+
+	  Headers.prototype.get = function (name) {
+	    name = normalizeName(name);
+	    return this.has(name) ? this.map[name] : null;
+	  };
+
+	  Headers.prototype.has = function (name) {
+	    return this.map.hasOwnProperty(normalizeName(name));
+	  };
+
+	  Headers.prototype.set = function (name, value) {
+	    this.map[normalizeName(name)] = normalizeValue(value);
+	  };
+
+	  Headers.prototype.forEach = function (callback, thisArg) {
+	    for (var name in this.map) {
+	      if (this.map.hasOwnProperty(name)) {
+	        callback.call(thisArg, this.map[name], name, this);
+	      }
+	    }
+	  };
+
+	  Headers.prototype.keys = function () {
+	    var items = [];
+	    this.forEach(function (value, name) {
+	      items.push(name);
+	    });
+	    return iteratorFor(items);
+	  };
+
+	  Headers.prototype.values = function () {
+	    var items = [];
+	    this.forEach(function (value) {
+	      items.push(value);
+	    });
+	    return iteratorFor(items);
+	  };
+
+	  Headers.prototype.entries = function () {
+	    var items = [];
+	    this.forEach(function (value, name) {
+	      items.push([name, value]);
+	    });
+	    return iteratorFor(items);
+	  };
+
+	  if (support.iterable) {
+	    Headers.prototype[Symbol.iterator] = Headers.prototype.entries;
+	  }
+
+	  function consumed(body) {
+	    if (body.bodyUsed) {
+	      return Promise.reject(new TypeError('Already read'));
+	    }
+	    body.bodyUsed = true;
+	  }
+
+	  function fileReaderReady(reader) {
+	    return new Promise(function (resolve, reject) {
+	      reader.onload = function () {
+	        resolve(reader.result);
+	      };
+	      reader.onerror = function () {
+	        reject(reader.error);
+	      };
+	    });
+	  }
+
+	  function readBlobAsArrayBuffer(blob) {
+	    var reader = new FileReader();
+	    var promise = fileReaderReady(reader);
+	    reader.readAsArrayBuffer(blob);
+	    return promise;
+	  }
+
+	  function readBlobAsText(blob) {
+	    var reader = new FileReader();
+	    var promise = fileReaderReady(reader);
+	    reader.readAsText(blob);
+	    return promise;
+	  }
+
+	  function readArrayBufferAsText(buf) {
+	    var view = new Uint8Array(buf);
+	    var chars = new Array(view.length);
+
+	    for (var i = 0; i < view.length; i++) {
+	      chars[i] = String.fromCharCode(view[i]);
+	    }
+	    return chars.join('');
+	  }
+
+	  function bufferClone(buf) {
+	    if (buf.slice) {
+	      return buf.slice(0);
+	    } else {
+	      var view = new Uint8Array(buf.byteLength);
+	      view.set(new Uint8Array(buf));
+	      return view.buffer;
+	    }
+	  }
+
+	  function Body() {
+	    this.bodyUsed = false;
+
+	    this._initBody = function (body) {
+	      this._bodyInit = body;
+	      if (!body) {
+	        this._bodyText = '';
+	      } else if (typeof body === 'string') {
+	        this._bodyText = body;
+	      } else if (support.blob && Blob.prototype.isPrototypeOf(body)) {
+	        this._bodyBlob = body;
+	      } else if (support.formData && FormData.prototype.isPrototypeOf(body)) {
+	        this._bodyFormData = body;
+	      } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
+	        this._bodyText = body.toString();
+	      } else if (support.arrayBuffer && support.blob && isDataView(body)) {
+	        this._bodyArrayBuffer = bufferClone(body.buffer);
+	        // IE 10-11 can't handle a DataView body.
+	        this._bodyInit = new Blob([this._bodyArrayBuffer]);
+	      } else if (support.arrayBuffer && (ArrayBuffer.prototype.isPrototypeOf(body) || isArrayBufferView(body))) {
+	        this._bodyArrayBuffer = bufferClone(body);
+	      } else {
+	        throw new Error('unsupported BodyInit type');
+	      }
+
+	      if (!this.headers.get('content-type')) {
+	        if (typeof body === 'string') {
+	          this.headers.set('content-type', 'text/plain;charset=UTF-8');
+	        } else if (this._bodyBlob && this._bodyBlob.type) {
+	          this.headers.set('content-type', this._bodyBlob.type);
+	        } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
+	          this.headers.set('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
+	        }
+	      }
+	    };
+
+	    if (support.blob) {
+	      this.blob = function () {
+	        var rejected = consumed(this);
+	        if (rejected) {
+	          return rejected;
+	        }
+
+	        if (this._bodyBlob) {
+	          return Promise.resolve(this._bodyBlob);
+	        } else if (this._bodyArrayBuffer) {
+	          return Promise.resolve(new Blob([this._bodyArrayBuffer]));
+	        } else if (this._bodyFormData) {
+	          throw new Error('could not read FormData body as blob');
+	        } else {
+	          return Promise.resolve(new Blob([this._bodyText]));
+	        }
+	      };
+
+	      this.arrayBuffer = function () {
+	        if (this._bodyArrayBuffer) {
+	          return consumed(this) || Promise.resolve(this._bodyArrayBuffer);
+	        } else {
+	          return this.blob().then(readBlobAsArrayBuffer);
+	        }
+	      };
+	    }
+
+	    this.text = function () {
+	      var rejected = consumed(this);
+	      if (rejected) {
+	        return rejected;
+	      }
+
+	      if (this._bodyBlob) {
+	        return readBlobAsText(this._bodyBlob);
+	      } else if (this._bodyArrayBuffer) {
+	        return Promise.resolve(readArrayBufferAsText(this._bodyArrayBuffer));
+	      } else if (this._bodyFormData) {
+	        throw new Error('could not read FormData body as text');
+	      } else {
+	        return Promise.resolve(this._bodyText);
+	      }
+	    };
+
+	    if (support.formData) {
+	      this.formData = function () {
+	        return this.text().then(decode);
+	      };
+	    }
+
+	    this.json = function () {
+	      return this.text().then(JSON.parse);
+	    };
+
+	    return this;
+	  }
+
+	  // HTTP methods whose capitalization should be normalized
+	  var methods = ['DELETE', 'GET', 'HEAD', 'OPTIONS', 'POST', 'PUT'];
+
+	  function normalizeMethod(method) {
+	    var upcased = method.toUpperCase();
+	    return methods.indexOf(upcased) > -1 ? upcased : method;
+	  }
+
+	  function Request(input, options) {
+	    options = options || {};
+	    var body = options.body;
+
+	    if (input instanceof Request) {
+	      if (input.bodyUsed) {
+	        throw new TypeError('Already read');
+	      }
+	      this.url = input.url;
+	      this.credentials = input.credentials;
+	      if (!options.headers) {
+	        this.headers = new Headers(input.headers);
+	      }
+	      this.method = input.method;
+	      this.mode = input.mode;
+	      if (!body && input._bodyInit != null) {
+	        body = input._bodyInit;
+	        input.bodyUsed = true;
+	      }
+	    } else {
+	      this.url = String(input);
+	    }
+
+	    this.credentials = options.credentials || this.credentials || 'omit';
+	    if (options.headers || !this.headers) {
+	      this.headers = new Headers(options.headers);
+	    }
+	    this.method = normalizeMethod(options.method || this.method || 'GET');
+	    this.mode = options.mode || this.mode || null;
+	    this.referrer = null;
+
+	    if ((this.method === 'GET' || this.method === 'HEAD') && body) {
+	      throw new TypeError('Body not allowed for GET or HEAD requests');
+	    }
+	    this._initBody(body);
+	  }
+
+	  Request.prototype.clone = function () {
+	    return new Request(this, { body: this._bodyInit });
+	  };
+
+	  function decode(body) {
+	    var form = new FormData();
+	    body.trim().split('&').forEach(function (bytes) {
+	      if (bytes) {
+	        var split = bytes.split('=');
+	        var name = split.shift().replace(/\+/g, ' ');
+	        var value = split.join('=').replace(/\+/g, ' ');
+	        form.append(decodeURIComponent(name), decodeURIComponent(value));
+	      }
+	    });
+	    return form;
+	  }
+
+	  function parseHeaders(rawHeaders) {
+	    var headers = new Headers();
+	    rawHeaders.split(/\r?\n/).forEach(function (line) {
+	      var parts = line.split(':');
+	      var key = parts.shift().trim();
+	      if (key) {
+	        var value = parts.join(':').trim();
+	        headers.append(key, value);
+	      }
+	    });
+	    return headers;
+	  }
+
+	  Body.call(Request.prototype);
+
+	  function Response(bodyInit, options) {
+	    if (!options) {
+	      options = {};
+	    }
+
+	    this.type = 'default';
+	    this.status = 'status' in options ? options.status : 200;
+	    this.ok = this.status >= 200 && this.status < 300;
+	    this.statusText = 'statusText' in options ? options.statusText : 'OK';
+	    this.headers = new Headers(options.headers);
+	    this.url = options.url || '';
+	    this._initBody(bodyInit);
+	  }
+
+	  Body.call(Response.prototype);
+
+	  Response.prototype.clone = function () {
+	    return new Response(this._bodyInit, {
+	      status: this.status,
+	      statusText: this.statusText,
+	      headers: new Headers(this.headers),
+	      url: this.url
+	    });
+	  };
+
+	  Response.error = function () {
+	    var response = new Response(null, { status: 0, statusText: '' });
+	    response.type = 'error';
+	    return response;
+	  };
+
+	  var redirectStatuses = [301, 302, 303, 307, 308];
+
+	  Response.redirect = function (url, status) {
+	    if (redirectStatuses.indexOf(status) === -1) {
+	      throw new RangeError('Invalid status code');
+	    }
+
+	    return new Response(null, { status: status, headers: { location: url } });
+	  };
+
+	  self.Headers = Headers;
+	  self.Request = Request;
+	  self.Response = Response;
+
+	  self.fetch = function (input, init) {
+	    return new Promise(function (resolve, reject) {
+	      var request = new Request(input, init);
+	      var xhr = new XMLHttpRequest();
+
+	      xhr.onload = function () {
+	        var options = {
+	          status: xhr.status,
+	          statusText: xhr.statusText,
+	          headers: parseHeaders(xhr.getAllResponseHeaders() || '')
+	        };
+	        options.url = 'responseURL' in xhr ? xhr.responseURL : options.headers.get('X-Request-URL');
+	        var body = 'response' in xhr ? xhr.response : xhr.responseText;
+	        resolve(new Response(body, options));
+	      };
+
+	      xhr.onerror = function () {
+	        reject(new TypeError('Network request failed'));
+	      };
+
+	      xhr.ontimeout = function () {
+	        reject(new TypeError('Network request failed'));
+	      };
+
+	      xhr.open(request.method, request.url, true);
+
+	      if (request.credentials === 'include') {
+	        xhr.withCredentials = true;
+	      }
+
+	      if ('responseType' in xhr && support.blob) {
+	        xhr.responseType = 'blob';
+	      }
+
+	      request.headers.forEach(function (value, name) {
+	        xhr.setRequestHeader(name, value);
+	      });
+
+	      xhr.send(typeof request._bodyInit === 'undefined' ? null : request._bodyInit);
+	    });
+	  };
+	  self.fetch.polyfill = true;
+	})(typeof self !== 'undefined' ? self : undefined);
 
 /***/ }
 /******/ ]);

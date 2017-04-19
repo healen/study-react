@@ -11,7 +11,12 @@ import {
 	JsxSyntx,
 	Comp,
 	PropsChildren,
-	ProptypesEx
+	ProptypesEx,
+	Domc,
+	Statec,
+	Formc,
+	Lifec,
+	Ajaxc
 } from './components/study'
 var  Routers = (
 	<Router history={hashHistory}>
@@ -24,9 +29,14 @@ var  Routers = (
 				<Route path="comp" component={Comp}></Route>
 				<Route path="propschildren" component={PropsChildren}></Route>
 				<Route path="propstype" component={ProptypesEx}></Route>
-				
+				<Route path="domc" component={Domc}></Route>
+				<Route path="statec" component={Statec}></Route>
+				<Route path="formc" component={Formc}></Route>
+				<Route path="life" component={Lifec}></Route>
+				<Route path="ajax" component={Ajaxc}></Route>
+
 			</Route>
-			<Route path="effects" component={Effects}></Route>
+			// <Route path="effects" component={Effects}></Route>
 		</Route>
 	</Router>
 )
