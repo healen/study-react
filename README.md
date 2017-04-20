@@ -66,11 +66,15 @@
 
   安装
  ===
-  项目地址：（git clone） <br>
-    https://github.com/healen/study-react.git <br>
-### 注意：<br>
-    npm install(安装包依赖)<br />
-    webpack <br />
+  项目地址：（git clone）
+ 
+    https://github.com/healen/study-react.git
+
+### 注意：
+    npm install(安装包依赖)
+
+    webpack 
+
     开启服务器查看
   
   构建：
