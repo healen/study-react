@@ -1,14 +1,4 @@
-  项目背景： ===
-  自从接触React以来，一直对它很感兴趣。最近使用 React 写了个页面练练手，目前这个版本还很简单且粗糙，日后待我慢慢修改完善。
-
-  技术栈：
-===
- * React 15.4
- * React-Route
- * React-codemirror
- * isomorphic-fetch
- * webpack
- * ES6
+  项目背景： === 自从接触React以来，一直对它很感兴趣。最近使用 React 写了个页面练练手，目前这个版本还很简单且粗糙，日后待我慢慢修改完善。 技术栈： === * React 15.4 * React-Route * React-codemirror * isomorphic-fetch * webpack * ES6
  * less
  * javascript
  * bootstrap
