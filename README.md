@@ -13,11 +13,10 @@
  * isomorphic-fetch
  * webpack
  * ES6
->>>>>>> origin/1.0.40.zxd
  * less
  * javascript
  * bootstrap
-
+ 
   演示
  ===
     [在线演示戳我](https://healen.github.io/healenrt "点击链接显示")（请使用chrome开发者手机演示模式预览）
