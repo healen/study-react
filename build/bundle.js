@@ -27579,7 +27579,7 @@
 
 	var _reactRouter = __webpack_require__(179);
 
-	var _code = __webpack_require__(258);
+	var _code = __webpack_require__(257);
 
 	var _code2 = _interopRequireDefault(_code);
 
@@ -27591,8 +27591,8 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	__webpack_require__(259).polyfill();
-	__webpack_require__(261);
+	__webpack_require__(258).polyfill();
+	__webpack_require__(260);
 
 	var Hello = function (_Component) {
 		_inherits(Hello, _Component);
@@ -43335,8 +43335,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(253)(module)))
 
 /***/ },
-/* 257 */,
-/* 258 */
+/* 257 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -43375,7 +43374,7 @@
 	exports.default = code;
 
 /***/ },
-/* 259 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var require;var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(process, global) {'use strict';
@@ -43517,7 +43516,7 @@
 	  function attemptVertx() {
 	    try {
 	      var r = require;
-	      var vertx = __webpack_require__(260);
+	      var vertx = __webpack_require__(259);
 	      vertxNext = vertx.runOnLoop || vertx.runOnContext;
 	      return useVertxTimer();
 	    } catch (e) {
@@ -44541,13 +44540,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), (function() { return this; }())))
 
 /***/ },
-/* 260 */
+/* 259 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
 
 /***/ },
-/* 261 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44556,11 +44555,11 @@
 	// on the global object (window or self)
 	//
 	// Return that as the export for use in Webpack, Browserify etc.
-	__webpack_require__(262);
+	__webpack_require__(261);
 	module.exports = self.fetch.bind(self);
 
 /***/ },
-/* 262 */
+/* 261 */
 /***/ function(module, exports) {
 
 	'use strict';

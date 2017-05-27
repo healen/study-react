@@ -67,7 +67,7 @@
   安装
  ===
   项目地址：（git clone）
- 
+  
     https://github.com/healen/study-react.git
 
 ### 注意：

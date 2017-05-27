@@ -1,0 +1,101 @@
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+html,
+#bodyContent,
+.bodyPage {
+  height: 100%;
+}
+.indexWarrp {
+  text-align: center;
+}
+.indexWarrp p {
+  padding: 10px;
+}
+.nav a.active {
+  background: #333;
+  border-bottom: 3px solid #cc7a6f!important;
+}
+.navBar {
+  border-left: 1px solid #ccc;
+  height: 100%;
+}
+.navBar ul {
+  padding-left: 0px;
+  margin-top: 10px;
+}
+.navBar li {
+  list-style: none;
+}
+.navBar li a {
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  text-align: left;
+  color: #555;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  border-radius: 0px 20px 20px 0px;
+  border-left: 3px solid #f9f9f9;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+  width: 90%;
+}
+.navBar li a:hover {
+  text-decoration: none;
+  color: #00d8ff;
+  width: 100%;
+}
+.navBar li a.acitve {
+  border-right: 3px solid #00d8ff;
+  text-align: right;
+  color: #00d8ff;
+  background: #333;
+  width: 100%;
+}
+.navBar li a:focus {
+  text-decoration: none;
+}
+.codeTextarea {
+  width: 100%;
+  height: 210px;
+  display: block;
+  border-color: #ddd;
+  margin-top: -1px;
+  display: none;
+}
+.codeTextarea:focus {
+  border-color: #ddd;
+  outline-offsert: 0px;
+  outline-width: 0px;
+}
+.codebox {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  overflow: hidden;
+  display: block;
+  -webkit-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+.h {
+  height: 300px;
+  opacity: 1;
+}
+.h0 {
+  height: 0px;
+  border-width: 0px;
+  opacity: .3;
+}
+.life {
+  background: #000000;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  overflow: hidden;
+}
